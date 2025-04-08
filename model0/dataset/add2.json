@@ -1,0 +1,478 @@
+[
+  {
+    "instruction": "Transform the following architectural archaeology research into a science news article:",
+    "input": [
+        "It is now currently understood that most gothic cathedrals and churches can no longer be considered as structures of purely lithic design. In addition to stone, the use of large quantities of iron or steel reinforcements, clamps as well as chains and tie-rods of substantial size has been brought to light by recent historical and archaeological researches (Chapelot and Benoit, 1985; Bernardi and Dillmann, 2005; L'Héritier et al., 2010, L'Héritier, 2007; Timbert, 2009). Thus, at Soissons, Paris, Rouen, Beauvais, and Bourges metal was potentially considered being part of the initial constructive design considering archaeological evidence from construction analysis (Erlande-Brandenburg, 1996; Taupin, 1996; Férauge and Mignerey, 1996) and archaeometry that brought light the use of ancient processes to produce metal components (Dillmann and L'Héritier, 2007; Dillmann, 2009; L'Héritier et al., 2010).",
+        "Unfortunately, the history of medieval monuments beginning with their construction is often tumultuous, given the succession of building phases since the medieval period for the purposes of modification, repair and conservation. Each of these medieval, modern or contemporary building yards potentially used metal, thereby often making the archaeological interpretations of a building limited in this respect. At this stage, the absolute dating of these iron elements is essential for specifying their place both in medieval constructive thought and the technical reality of construction building yards. The aim of the present paper is to propose an original methodology for radiocarbon dating to examine reinforcing elements discovered in Bourges and Beauvais Cathedrals, two major monuments in the development of French gothic architecture in which ferrous alloy armatures of significant size (i.e. tie-rods and chains) have been identified.",
+        "The basic idea for dating ferrous alloys by radiocarbon is that the carbon contained in the steely zones of the ancient metal, coming from the charcoal used during ore smelting, can be extracted and its isotopic ratio determined, leading to a radiocarbon date. With the advent of accelerator mass spectrometry (AMS), dating of archaeological samples of a few milligrams has become technically feasible (Cook et al., 2003a). With uncertainties (see below), the radiocarbon dates correspond to the manufacturing date of the artefact. Nevertheless, only a hundred iron samples have been dated by radiocarbon and published to date (Van der Merwe and Stuiver, 1968; Cresswell, 1992; Kusimba et al., 1994; Beukens et al., 1999; Cheoun et al., 2001; Cook et al., 2001; Craddock et al., 2002; Hüls et al., 2004; Oinonen et al., 2009) and ~15% of the dates obtained seemed to be unreliable (Cook et al., 2003a). This discrepancy could be due to different factors: the age of the wood used to produce the charcoal (Forbes, 1955, 1963, 1964; Kusimba et al., 1994), potential contamination with the carbonates of the ore, recycling of older metals, cementing with other materials containing carbon. Another major limitation is related to the low carbon content of bloomery iron obtained in the Middle Ages, heterogeneously distributed within the metallic matrix. This stresses the necessity of having a good knowledge of the nature of the material prior to attempt dating. Another difficulty is linked to the carbon extraction from the sample. The protocols explored since the 1960's (Cook et al., 2003a) are based on a preliminary chemical cleaning or mechanical preparation to abrade, cut or mill the artefact (Cook et al., 2003b; Hüls et al., 2004; Oinonen et al., 2009). Various approaches for extracting carbon were then used based on acidic dissolution of iron (Nakamura et al., 1995; Scharf et al., 2004), and combustion without (Van der Merwe and Stuiver, 1968; Cresswell, 1992) or with acidic pre-cleaning (Cook et al., 2001; Scharf et al., 2005). Scharf et al. (2005) also proposed making a metal/carbon mix ready to be directly measured by AMS. This method is unfortunately not adapted to samples with relatively low C content such as ancient bloomery iron. None of these approaches consider the microscopic heterogeneity of bloomery iron and the fact that important zones of the artefact could contain very low C content, considerably lowering the chances of randomly sampling significant quantities of iron. Considering these different risks of misdating, we set up an adapted methodology for dating bloomery iron found in cathedrals following a detailed metallographic and Slag Inclusions (SI) study performed in transverse sections of the artefacts (Pagès et al., 2011). This approach allows for the determination of the chemical composition of SI entrapped in the metal providing information on the iron-making process and potential cementing and recycling of the archaeological object (Dillmann and L'Héritier, 2007; Fluzin et al., 2011). This methodology was validated on artefacts of known age from different periods and obtained with different kinds of ores including carbonated ones. We then examined the resulting 14C data for iron reinforcements in Bourges and Beauvais Cathedrals, with regard to their location in the structure of the cathedrals."
+    ],
+    "output": [
+        "The “forest” of Notre Dame was one of Olivier de Châlus’ favorite places. That dense lattice of timbers under the building’s lead roof epitomized the medieval construction techniques that the engineer has spent years analyzing.",
+        "“There was a very special wood smell, very strong, coming from the Middle Age,” de Châlus says. “And it was very, very calm — impressive, compared to the very noisy life inside the cathedral.” As one of the few visitors allowed in the forest, de Châlus had the rare privilege of hearing the creaking noises emitted by the timeworn wood and peering at numbers scrawled on the timbers by long-gone carpenters.",
+        "That beloved forest is now gutted, lost in an April 15, 2019 blaze that destroyed the cathedral’s roof and spire and damaged parts of the masonry. De Châlus, who works for the global engineering firm Arcadis, is finishing a Ph.D. on the construction of the cathedral.",
+        "There’s little documentation of the building process, which began in 1163 and continued for about 200 years. De Châlus has devoted himself to teasing out the unwritten rules of construction — how builders decided the size of columns or the height of flying buttresses, for example. He notes that builders lifted 100-kilogram stones more than 60 meters off the ground without the benefits of modern technology. Exactly how this was accomplished has been lost to time, he says.",
+        "“Notre Dame is my life, my whole life,” says de Châlus, who spent four years supervising the guides that show tourists around the cathedral. So, after the fire, he quickly joined an international effort organized by French scientists to use their expertise to help rebuild the cathedral and learn more about the iconic building. He is now the spokesperson for the group, Association des Scientifiques au Service de la Restauration de Notre Dame de Paris — the Association of Scientists in Service of the Restoration of Notre Dame of Paris.",
+        "The fire has opened up access to parts of the building that could not be studied when the structure was intact. Scientists have come together with plans to research the history of the cathedral, as well as the fire’s environmental impact on the surrounding city. Some will even explore what the cathedral’s aged materials can reveal about climate change.",
+        "As the flames died out, Paris despaired at the damage to one of its most treasured historic structures. But “there’s much more to lose than what was lost already,” says archaeologist Maxime L’Héritier of Université Paris 8. If the materials that fell from the top of the cathedral — stone, wood, iron, lead — are not studied, he says, the opportunity lost is “even worse than what the fire has caused.”",
+        "The day after the fire, L’Héritier and art historian Arnaud Ybert of the Université de Bretagne Occidentale in Quimper, France, formed the association of scientists. Today, more than 200 scientists are part of the group, including geologists, archaeologists, and engineers. The association aims to coordinate work among experts in various specialties, share knowledge and advocate for scientific study of the cathedral.",
+        "L’Héritier, who studies ancient metals, wants to know more about how iron was used in the structure, including its integration in the stone walls and the carpentry that held up the roof. While renovations in the 19th century added iron to the structure, the researchers will be searching for medieval iron placed during the original construction.",
+        "Radiocarbon dating is commonly used to sort out the age of materials, but for that, the materials must contain some carbon. Luckily, medieval iron-production techniques introduced small traces of carbon, which, when alloyed with iron, make steel. Carbon dating those steel bits could demonstrate whether the metal is original, L’Héritier says.",
+        "And the iron, medieval or not, could act “like a thermometer,” revealing how hot the fire got, says Philippe Dillmann, an archaeometallurgist at the Centre National de la Recherche Scientifique, or CNRS. As temperatures rose inside the fire, the corrosion on the iron — essentially rust — would have transformed from typical rust into more unusual compounds. Analyzing that corrosion could indicate how much heat was inflicted on the building, and so could help scientists understand how much that heat weakened the limestone that makes up the bulk of the cathedral’s structure.",
+        "Dillmann is co-leader of a second effort to organize researchers to study Notre Dame, spearheaded by CNRS. The CNRS team will also plan scientific meetings and compile research.",
+        "Both groups are still in the planning stages because the cathedral is still contaminated with the toxic dust released when the lead roof burned. Most scientists do not yet have access to the building, and all the materials within must be sorted and cataloged before researchers can get their hands on them.",
+        "A third group of scientists is already on the scene assisting with the building’s cleanup and restoration. Researchers from the French Ministry of Culture’s Laboratoire de Recherche des Monuments Historiques, or LRMH, develop scientific techniques for restoring monuments throughout France.",
+        "The laboratory, located in Champs-sur-Marne near Paris, employs 23 scientists “for all the materials and for all the monuments in France,” says LRMH’s Lise Leroux. “We are very busy.” Even more so after the fire.",
+        "A geologist and expert in the conservation of stone, Leroux is helping to determine which of Notre Dame’s limestone blocks can stay in place or be reused, and which must be replaced with new stones. “The monument is very degraded,” she says. As the fire raged that night, the intense heat and the deluge of water from firefighting efforts caused cracking and other damage in the stones nearest the flames. And when the church’s spire collapsed, the impact punched gaping holes in the limestone ceiling.",
+        "Finding stones to replace damaged or destroyed ones will demand great care. Placing stones of different compositions next to one another — for example, distinct types of limestone quarried from different parts of the world — can cause water or pollutants to accumulate in one stone more than another, weakening the structure.",
+        "Even before the fire, “the monument was very, very dirty,” says LRMH metals expert and chemist Aurélia Azéma. Now, LRMH researchers are devising and testing techniques for removing lead, which was strewn throughout the cathedral when the roof burned. Metal, stone, paint, and other materials require tailored methods to extract the lead without causing damage.",
+        "Problems with lead extend beyond the cathedral walls. During the fire, extremely high temperatures caused the lead to aerosolize into small particles that billowed into the air and fell as dust nearby. That gave geochemist Sophie Ayrault, who studies toxic metals, a new project.",
+        "Ayrault, of the Laboratoire des Sciences du Climat et de l’Environnement in Gif-sur-Yvette, France, previously searched for metals in the sediments of the Seine, the river that runs through Paris. Analysis of sediment cores from the river’s floodplain reveals how contamination has varied over the last 100 years.",
+        "To pinpoint the origins of the lead she detects, Ayrault measures the relative concentrations of its isotopes — different versions of the element with varying numbers of neutrons in the nucleus. The ratios are a fingerprint that can be used to trace the contamination’s source.",
+        "For example, in a paper published in 2012 in Chemosphere, Ayrault and colleagues reported that the signature of leaded gasoline was detectable in older Seine sediments, but faded away in sediments deposited after leaded gasoline was phased out in the mid-1980s.",
+        "Before Notre Dame went up in flames, Ayrault had hoped to search the Seine’s sediments for runoff from Notre Dame’s roof — which, when intact, contained as much as 460 metric tons of lead, she says. But Ayrault hadn’t yet procured the roof samples she needed to discern its fingerprint. Now, to understand the fire’s impact, determining that signature has become more important.",
+        "After the fire, tests in parks and schools near the cathedral found lead levels high enough to endanger children. But it’s not clear if all of that lead was a result of the fire, or if some contamination predated it. To resolve that question, Ayrault aims to collect samples of melted lead and dust from the fire, as well as remaining intact parts of the roof. Then she’ll search for signs of that lead in future tests around the city.",
+        "The charred remnants of de Châlus’ beloved forest can also tell a story.",
+        "The oak trees that became the roof’s wooden frame grew during a hot spell in Europe known as the Medieval Warm Period, which lasted from the 11th century to the early 14th century (SN: 8/17/19, p. 6). Studying that wood could reveal details about that natural warming — such as how often droughts occurred — and may lead to a better understanding of what to expect from modern-day climate change, says Alexa Dufraisse of CNRS.",
+        "Dufraisse plans to analyze tree rings within the burnt timber. The width of the rings and the amounts of various isotopes found within the wood reveal the conditions under which the tree grew. That could include how wet or dry the climate was and the approximate geographic location of the forest.",
+        "She and colleagues also hope to learn how builders chose the trees and whether the forests were managed in some way. “This is a study that … could never have been conducted without the destruction of the structure by fire,” says Dufraisse, a dendroanthracologist, a scientist who studies tree rings within charred wood.",
+        "Other researchers are investigating less-tangible aspects of the cathedral, like its acoustics and its sociological significance. Anthropologists plan to interview people affected by the fire, including tour guides and musicians who’ve performed in the cathedral, to understand the psychological toll of the fire. “We all remember what we were doing when it was burning,” says molecular archaeologist Martine Regert of CNRS, who leads the CNRS group alongside Dillmann.",
+        "Regert compares the Notre Dame disaster to the 2018 fire in Brazil’s National Museum in Rio de Janeiro, in which millions of artifacts and preserved specimens were lost or damaged (SN Online: 9/7/18). In the Rio fire, “for me, we lost more” in terms of the scientific value, she says. Yet, emotionally, “I was probably more upset by Notre Dame.”",
+        "The cathedral holds an outsize place in the hearts of Parisians and people around the world. If another cathedral had burned, says de Châlus, there would have been less interest. Determining how to rebuild requires understanding our relationship with it, too, he says.",
+        "Subject to bouts of emotion himself, de Châlus says he cried when he first entered the cathedral after the fire. He felt an unfamiliar wind at his back, sweeping into the church and up through the holes where parts of the ceiling had collapsed. He says of Notre Dame: “It was much more than a church … much more than a study subject for me.”"
+    ]
+  },
+  {
+    "instruction": "将以下建筑考古学研究转化为一篇科技新闻：",
+    "input": [
+        "现在已知，大多数哥特式大教堂和教堂不再仅被视为纯粹的石质结构。除了石材，最近的历史和考古学研究还揭示了大量使用铁或钢制加固、夹具、链条以及较大尺寸的拉杆和支撑杆的现象（Chapelot和Benoit, 1985；Bernardi和Dillmann, 2005；L'Héritier等人, 2010；L'Héritier, 2007；Timbert, 2009）。因此，在索松、巴黎、鲁昂、博韦和布尔日等地，金属被认为可能是最初建设设计的一部分，结合考古建筑分析的证据（Erlande-Brandenburg, 1996；Taupin, 1996；Férauge和Mignerey, 1996）和考古物理学的研究，揭示了使用古代工艺生产金属部件的情况（Dillmann和L'Héritier, 2007；Dillmann, 2009；L'Héritier等人, 2010）。",
+        "不幸的是，许多中世纪建筑的历史充满了动荡，从最初的建造到后来的改建、修复和保护。每个建筑阶段可能都使用了金属，这使得考古学对这些建筑的解释常常受到限制。在这一阶段，必须对这些铁元素进行绝对定年，以明确它们在中世纪建筑思想和施工实际中的位置。本研究旨在提出一种独特的放射性碳定年方法，用于检查在布尔日和博韦大教堂中发现的加固元素，这两个大教堂是法国哥特式建筑发展的重要 monuments，其中发现了较大规模的铁合金结构（如拉杆和链条）。",
+        "放射性碳定年铁合金的基本思想是提取来自古代金属中的钢性区域的碳，这些碳来自冶炼时所用的木炭，通过测定其同位素比率来得出放射性碳的日期。随着加速器质谱技术（AMS）的出现，可以对几毫克的考古样本进行技术上的定年（Cook等人, 2003a）。尽管存在不确定性（见下文），放射性碳日期对应于工艺品的制造日期。然而，至今只有大约一百个铁样本被定年并发布（Van der Merwe和Stuiver, 1968；Cresswell, 1992；Kusimba等人, 1994；Beukens等人, 1999；Cheoun等人, 2001；Cook等人, 2001；Craddock等人, 2002；Hüls等人, 2004；Oinonen等人, 2009），其中约15％的日期结果似乎不可靠（Cook等人, 2003a）。这种差异可能由多种因素造成：用于生产木炭的木材的年龄（Forbes, 1955, 1963, 1964；Kusimba等人, 1994）、矿石碳酸盐的潜在污染、旧金属的回收、以及与其他含碳材料的结合。另一个主要限制与中世纪铁冶炼铁的低碳含量有关，该铁在金属基体内分布不均。这强调了在尝试定年之前需要对材料的性质有充分了解。另一个困难与从样本中提取碳有关。自1960年代以来，已经探索了许多预处理方法，基于化学清洗或机械准备（Cook等人, 2003b；Hüls等人, 2004；Oinonen等人, 2009）。各种方法被用于基于铁的酸性溶解（Nakamura等人, 1995；Scharf等人, 2004）和无酸前处理（Van der Merwe和Stuiver, 1968；Cresswell, 1992）或酸性前处理（Cook等人, 2001；Scharf等人, 2005）。Scharf等人（2005）还提出了一种金属/碳混合物，直接进行AMS测量的方法。不幸的是，这种方法不适用于含碳较少的古代冶炼铁样本。这些方法都没有考虑到古代冶炼铁的显微异质性，以及部分工件区域可能含碳极低，从而大大降低了随机采样到有效数量的铁的机会。考虑到这些误定年的风险，我们为定年大教堂内发现的冶炼铁设定了一个改进方法，并进行了详细的金属学和渣滓包含物（SI）研究（Pagès等人, 2011）。这种方法可以确定SI在金属中的化学成分，提供关于铁冶炼过程以及考古物品可能的再利用和回收的信息（Dillmann和L'Héritier, 2007；Fluzin等人, 2011）。我们通过验证不同年代、不同矿石（包括碳酸盐矿石）制作的已知年代的文物，验证了这种方法的有效性。然后我们检查了布尔日和博韦大教堂中的铁加固物的14C数据，结合它们在大教堂结构中的位置进行分析。"
+    ],
+    "output": [
+        "巴黎圣母院的‘森林’是Olivier de Châlus最喜爱的地方之一。在建筑物的铅制屋顶下那密集的木梁网络体现了中世纪建筑技术，这也是这位工程师多年研究的主题。",
+        "“那是一种非常特别的木头气味，强烈得让人感觉仿佛来自中世纪。” de Châlus说。“而且那是非常安静的——与教堂内喧嚣的生活形成鲜明对比。”作为少数被允许进入森林的访客之一，de Châlus有幸听到了木材发出的吱嘎声，甚至能看到木梁上刻下的数字，这些数字是早已去世的木匠留下的。",
+        "这片珍爱的森林如今已被摧毁，在2019年4月15日的大火中，教堂的屋顶和尖塔被烧毁，部分石砌结构也遭到损坏。de Châlus目前正在为全球工程公司Arcadis工作，并正在完成他关于圣母院建筑的博士研究。",
+        "建筑的过程几乎没有留下记录，尽管建筑始于1163年并持续了约200年。de Châlus致力于分析中世纪建筑的未被记录的规则——例如建筑师如何决定柱子的尺寸或者飞扶壁的高度。他指出，建筑师们在没有现代技术的帮助下，将100公斤重的石块提升到60多米的高度。究竟他们是如何做到这一点的，已经随着时间的流逝而失传。",
+        "“圣母院是我的生命，我的一切。” de Châlus说，他曾四年时间担任教堂导游的负责人。在火灾发生后，他迅速加入了由法国科学家组织的国际行动，利用他们的专业知识帮助重建圣母院，并深入研究这座标志性建筑。他现在是该组织的发言人，巴黎圣母院修复科学家协会（Association des Scientifiques au Service de la Restauration de Notre Dame de Paris）的成员。",
+        "火灾为建筑物的某些部分打开了无法在建筑完整时研究的区域。科学家们已经组织起来，计划研究教堂的历史，以及火灾对周围城市环境的影响。部分科学家甚至会探索教堂的古老材料能揭示关于气候变化的更多信息。",
+        "随着火焰的熄灭，巴黎为失去这座珍贵的历史遗产而感到沮丧。但“我们失去的不仅仅是已经丧失的。” 巴黎第8大学的考古学家Maxime L'Héritier说道。如果从教堂顶部掉落的材料——石材、木材、铁、铅——不被研究，他表示，这种丧失的机会将比火灾本身的破坏更为严重。",
+        "火灾后的第二天，L'Héritier和法国西布列塔尼大学的艺术史学家Arnaud Ybert成立了一个科学家协会。如今，这个组织已经有超过200名科学家参与，包括地质学家、考古学家和工程师。该协会旨在协调各领域专家的工作，分享知识，倡导对教堂进行科学研究。",
+        "研究古代金属的L'Héritier希望了解更多关于铁是如何在建筑结构中使用的，包括其如何与石墙以及支撑屋顶的木结构结合。他指出，尽管19世纪的修复增加了铁的使用，但研究人员将寻找在最初建设时使用的中世纪铁材料。",
+        "放射性碳定年技术通常用于确定材料的年龄，但为此材料必须含有一定的碳。幸运的是，中世纪铁生产技术引入了微量碳，这些碳与铁合金形成钢材。对这些钢铁碎片进行碳定年可以证明这些金属是否为原始材料，L'Héritier说。",
+        "不论这些铁是中世纪的还是其他时期的，都可以像温度计一样揭示火灾的温度，法国国家科学研究中心（CNRS）的考古冶金学家Philippe Dillmann表示。随着火灾温度的升高，铁的腐蚀——实际上就是铁锈——会从普通锈蚀转变为更不寻常的化合物。分析这种腐蚀可以指示建筑受到了多高的热量，从而帮助科学家理解火灾高温如何削弱构成圣母院主要结构的石灰岩。",
+        "Dillmann是第二个组织研究人员研究圣母院的项目的联合负责人，该项目由CNRS主办。CNRS团队还将计划科学会议并汇总研究成果。",
+        "由于教堂依然被火灾烧毁时释放的有毒尘土污染，两个科学家组的研究工作仍处于规划阶段。大多数科学家尚未能够进入建筑物，所有建筑内的材料必须先分类并整理，才能交给研究人员进行研究。",
+        "第三组科学家已经在现场协助建筑的清理和修复工作。来自法国文化部历史遗迹研究实验室（LRMH）的研究人员正在开发科学技术，用于修复法国各地的历史遗迹。",
+        "该实验室位于巴黎附近的香堡-马尔讷，拥有23名科学家，“负责所有材料和法国所有历史遗迹的修复工作，”LRMH的Lise Leroux说道。“我们非常忙，火灾后更忙。”",
+        "作为石材保护领域的专家，Leroux正在帮助判断哪些圣母院的石灰岩块可以保留并重新利用，哪些则需要更换。“这座建筑的状况非常恶化。”她说。当晚火灾肆虐，猛烈的高温和消防水源的冲击使得靠近火焰的石材出现裂缝和其他损坏。教堂的塔尖倒塌时，撞击也造成了石灰岩天花板的巨大裂缝。",
+        "寻找可以替换受损或摧毁的石块将需要极大的小心。将不同成分的石块放在一起——例如，来自不同地方采集的不同类型的石灰岩——可能会导致水分或污染物在某些石块中积聚，从而削弱结构。",
+        "甚至在火灾之前，“这座建筑就已经非常、非常脏了。”LRMH金属专家兼化学家Aurélia Azéma说道。现在，LRMH的研究人员正在设计和测试去除铅的技术，而这些铅在屋顶燃烧时散布到了教堂的每个角落。金属、石材、油漆和其他材料都需要量体裁衣的去除铅方法。",
+        "铅问题不仅仅局限于教堂的墙壁。在火灾期间，极高的温度导致铅蒸发成细小颗粒，随着空气传播并降落在附近的土壤中。这为地球化学家Sophie Ayrault提供了一个新的研究课题。",
+        "Ayrault，来自法国吉夫-苏尔-伊夫的气候与环境科学实验室，之前研究过塞纳河的沉积物，她发现了过去100年来污染的变化。",
+        "为了确定她检测到的铅的来源，Ayrault测量了其同位素的相对浓度——这些同位素是具有不同中子数的元素变体。通过这些同位素比率可以追踪污染源的来源。",
+        "例如，在2012年发表在《Chemosphere》上的一篇论文中，Ayrault及其同事报告称，塞纳河沉积物中可以检测到铅汽油的痕迹，但这种痕迹在1980年代中期逐渐消失。"
+    ]
+  },
+  {
+    "instruction": "Transform the following maritime archaeological research into a science news article:",
+    "input": [
+        "While searching for shipwreck remains near Oman in the Arabian Sea in 2014, divers discovered an unusual metal disk that has since proven to be the world’s oldest known mariner’s astrolabe, British researchers report.",
+        "The navigational device came from the wreckage of a ship in the Portuguese armada that had been part of explorer Vasco da Gama’s second voyage to India from 1502 to 1503. Historical decorations on the artifact led the researchers to suggest that the disk was used as early as 1496.",
+        "A bit wider than a dollar bill, the astrolabe contains carvings of Portugal’s royal coat of arms and a depiction of a ringed Earth that was associated with a Portuguese king who ruled from late 1495 to 1521. Laser imaging of the disk revealed 18 scale marks separated at 5-degree intervals.",
+        "The device, used to take altitudes at sea, could have measured from 0 degrees — when the sun is at the horizon — to 90 degrees — when the sun is directly overhead, the team reports in a study published online March 16 in the International Journal of Nautical Archaeology. Only one other solid disk, mariner’s astrolabe has been found, and its authenticity and age are uncertain, say oceanographer David Mearns and colleagues. Mearns directs Blue Water Recoveries in Midhurst, England, a company that locates and studies shipwrecks.",
+        "Of 104 artifacts known to have been used as mariner’s astrolabes, the new find is not only the oldest, but also the only one decorated with a national symbol, the researchers say. By the early 1500s, most navigators had adopted more precise, open-wheeled astrolabes."
+    ],
+    "output": [
+        "In 2014, divers off the coast of Oman made an extraordinary discovery that has rewritten maritime history: they found the world’s oldest known mariner’s astrolabe, a navigational device used by sailors to determine latitude.",
+        "This astrolabe was part of the wreckage of a ship from the Portuguese armada, which had sailed with Vasco da Gama on his second voyage to India between 1502 and 1503. The unique historical decorations on the artifact suggest that the astrolabe may have been in use as early as 1496.",
+        "The disk is slightly larger than a dollar bill and features carvings of the royal coat of arms of Portugal, along with an image of a ringed Earth that was linked to King Manuel I of Portugal, who ruled from 1495 to 1521. Laser imaging has revealed that the device contains 18 scale marks, each separated by 5-degree intervals.",
+        "Used to measure the altitude of the sun at sea, this astrolabe could have taken measurements ranging from 0 degrees (when the sun is at the horizon) to 90 degrees (when the sun is directly overhead), as reported by researchers in the *International Journal of Nautical Archaeology* on March 16.",
+        "Although other mariner’s astrolabes have been found, this new discovery is not only the oldest but also the only one with national symbols, highlighting its unique historical value. By the early 1500s, most sailors had switched to more precise, open-wheeled astrolabes."
+    ]
+  },
+  {
+    "instruction": "将以下海洋考古学研究转化为一篇科技新闻：",
+    "input": [
+        "2014年，在阿曼附近的阿拉伯海进行沉船遗址的搜索时，潜水员发现了一个不寻常的金属圆盘，后来证明它是世界上已知的最古老的航海用天文仪，英国研究人员报告称。",
+        "这件导航设备来自一艘葡萄牙舰队的沉船，该舰队是探险家瓦斯科·达·伽马于1502至1503年间第二次前往印度的航程的一部分。根据该文物上的历史装饰，研究人员推测该圆盘最早使用于1496年。",
+        "该天文仪比一张美元钞票稍宽，刻有葡萄牙皇家徽章和一个环形地球的图案，这一图案与葡萄牙国王曼努埃尔一世（他从1495年到1521年执政）相关联。激光成像技术揭示了圆盘上有18个按每5度间隔分布的刻度。",
+        "该设备用于测量海上太阳的高度，从0度（太阳在地平线处）到90度（太阳正好在头顶）都可以进行测量，研究小组在3月16日在线发表在《国际航海考古学杂志》上的研究中报告了这一发现。",
+        "目前已知有104个航海天文仪文物，其中这一新发现不仅是最古老的，也是唯一一件装饰有国家象征的天文仪，研究人员表示。到了1500年代初，大多数航海者已采用了更为精确的开轮天文仪。"
+    ],
+    "output": [
+        "2014年，阿曼海岸的潜水员们做出了一个非凡的发现，这一发现重新书写了海洋历史：他们找到了世界上已知的最古老的航海天文仪，这是一种航海工具，用于确定纬度。",
+        "这件天文仪来自葡萄牙舰队的沉船，舰队曾与瓦斯科·达·伽马一同在1502至1503年间进行第二次印度之行。文物上的独特历史装饰表明，这件天文仪最早可能使用于1496年。",
+        "该圆盘稍大于一张美元钞票，刻有葡萄牙皇家徽章，以及与葡萄牙国王曼努埃尔一世（他从1495年到1521年执政）相关联的环形地球图案。激光成像技术揭示了圆盘上有18个按每5度间隔分布的刻度。",
+        "这件天文仪用于测量海上太阳的高度，测量范围从0度（太阳位于地平线）到90度（太阳位于正上方），正如研究人员在《国际航海考古学杂志》3月16日刊登的报告中所描述的那样。",
+        "尽管已发现其他航海天文仪，这一新发现不仅是最古老的，而且是唯一一件装饰有国家象征的天文仪，凸显了它的独特历史价值。到1500年代初，大多数航海者已转向使用更为精确的开轮天文仪。"
+    ]
+  },
+  {
+    "instruction": "Transform the following archaeological research on cave art into a science news article:",
+    "input": [
+        "Discoveries on the island of Borneo illustrate that cave art emerged in Southeast Asia as early as in Western Europe, and with comparable complexity, researchers say.",
+        "A limestone cave in eastern Borneo features a reddish-orange painting of a horned animal, possibly a type of wild cattle that may have been found on the island at the time. The painting dates to at least 40,000 years ago, concludes a team led by archaeologist Maxime Aubert of Griffith University in Southport, Australia. This creature represents the oldest known example of a painted figure anywhere in the world, the scientists report online November 7 in *Nature*.",
+        "The same cave walls contain two hand outlines framed in reddish orange pigment that were made at least 37,200 years ago and a similar hand stencil with a maximum age of 51,800 years.",
+        "Three nearby caves display instances of a second rock art style that appeared around 20,000 years ago, the investigators say. Examples include purple-hued, humanlike figures and hand stencils, some decorated with lines or dots. Painted lines link some hand stencils to others.",
+        "Age estimates rest on analyses of uranium in mineral deposits that had formed over and underneath parts of each cave painting. Scientists used known decay rates of radioactive uranium in these deposits to calculate maximum and minimum dates for the paintings.",
+        "Aubert’s group previously used this technique, called uranium-series dating, to calculate that people on the nearby Indonesian island of Sulawesi created hand stencils on cave walls nearly 40,000 years ago (SN: 11/15/14, p. 6).",
+        "“Cave art could have potentially been exported from Borneo to Sulawesi and all the way to Papua and Australia,” Aubert says. Australian cave paintings of humanlike figures resemble those found on Borneo, he says. But the ages of the Australian finds remain uncertain.",
+        "No Southeast Asian cave paintings have been found from when humans first arrived in the region, between 70,000 and 60,000 years ago. At that time and up to the end of the last Ice Age around 10,000 years ago, Borneo formed mainland Eurasia’s easternmost tip thanks to lowered sea levels.",
+        "Those first Southeast Asians may have created cave art that hasn’t been discovered, Aubert says. Or, small groups of early colonizers may not have painted on cave walls until their populations expanded, leading to more complex social and ritual behaviors. It’s also possible that another human migration from elsewhere in Asia brought rock art to Borneo roughly 50,000 years ago.",
+        "Other investigators have used the uranium-series technique to date a painted red disk in a Spanish cave to at least 40,800 years ago (SN: 7/28/12, p. 15). Another report this year suggested that Neandertals painted abstract shapes and hand stencils on the walls of several Spanish caves at least 64,800 years ago (SN: 3/17/18, p. 6).",
+        "Aubert’s team has criticized that study, saying the researchers may have unintentionally dated mineral deposits that are much older than the artworks. If so, humans rather than Neandertals could have created the Spanish cave art.",
+        "Meanwhile, scientists who conducted the Neandertal cave art study express their own doubts about the reliability of dates for the Borneo paintings. Descriptions of sampled mineral deposits from the Borneo caves leave it unclear whether, for example, Aubert’s group dated the horned animal figure or adjacent paint remnants of some other, unidentified figure, says archaeologist João Zilhão of the University of Barcelona.",
+        "Zilhão and Neandertal paper coauthor Paul Pettitt of Durham University in England don’t doubt that cave painting emerged in Southeast Asia at least 40,000 years ago. But they and Aubert’s team disagree about how to collect mineral samples for dating rock art."
+    ],
+    "output": [
+        "Cave art discovered in Borneo has been dated to at least 40,000 years ago, researchers say, suggesting that Southeast Asia's rock art emerged at roughly the same time as Europe's, with a comparable level of complexity.",
+        "In a limestone cave in eastern Borneo, archaeologists found a reddish-orange painting of a horned animal, possibly a type of wild cattle. This painting, which dates to at least 40,000 years ago, is now recognized as the oldest known painted figure in the world.",
+        "The cave also contains hand stencils and outlines, some dating as far back as 51,800 years ago, demonstrating that the region’s rock art predates much of what was thought to be the oldest cave art.",
+        "Researchers have also identified a second style of rock art in nearby caves that appeared about 20,000 years ago, featuring humanlike figures and hand stencils decorated with lines or dots. This discovery offers new insight into the evolution of cave art across Southeast Asia.",
+        "The team used uranium-series dating, a technique that involves analyzing uranium in mineral deposits formed over and under the cave paintings, to establish the minimum and maximum dates of these artworks.",
+        "This research builds on previous work, which identified hand stencils in Sulawesi, Indonesia, dating to nearly 40,000 years ago. The similarities between the artwork in Borneo and Australia suggest that cave art may have spread across the region.",
+        "While no cave art has been found from the time humans first arrived in Southeast Asia, Aubert speculates that early colonizers may not have created cave art until their populations grew, leading to more complex behaviors.",
+        "Despite some uncertainties regarding the dating methods used, scientists generally agree that Southeast Asia’s cave art is among the oldest in the world, challenging traditional views on the origins of rock art."
+    ]
+  },
+  {
+    "instruction": "将以下考古研究转化为一篇科技新闻：",
+    "input": [
+        "在婆罗洲岛的发现表明，洞穴艺术在东南亚的出现与西欧一样早，且具有相似的复杂性，研究人员表示。",
+        "婆罗洲东部的一座石灰岩洞穴内，有一幅红橙色的动物画，可能是一种曾在该岛存在的野生牛类。这幅画的年代至少可以追溯到4万年前，澳大利亚格里菲斯大学的考古学家马克西姆·奥贝尔领导的团队得出结论。科学家在《自然》杂志11月7日的在线报告中指出，这个生物代表了世界上已知的最古老的画作。",
+        "同一洞穴的墙壁上还存在两个手印，呈红橙色，至少在3.72万年前制作，还有一个类似的手印，最大年龄为5.18万年。",
+        "附近的三座洞穴展示了第二种岩画风格，出现在大约2万年前。研究人员称，这些例子包括紫色的人形图像和手印，有些装饰有线条或点。画作中的线条将一些手印相连。",
+        "年龄估算基于对覆盖或位于每幅画作上方的矿物沉积物中的铀进行的分析。科学家使用这些沉积物中放射性铀的衰变率来计算绘画的最大和最小日期。",
+        "奥贝尔的团队此前使用这一技术，即铀系列测年法，计算出印尼附近的苏拉威西岛上的人们在约4万年前在洞穴墙上制作了手印。",
+        "奥贝尔表示：“洞穴艺术可能从婆罗洲传到苏拉威西，甚至远至巴布亚和澳大利亚。”他补充道，澳大利亚的洞穴画与婆罗洲的图像相似，但澳大利亚的发现日期仍然不确定。",
+        "在东南亚人类首次到达该地区时（大约70,000到60,000年前），并没有发现洞穴画作。那时，婆罗洲由于海平面下降，形成了欧亚大陆的最东端，直到大约1万年前的最后冰河时代结束。",
+        "奥贝尔表示，早期的东南亚人可能制作了尚未发现的洞穴艺术，或者，早期的定居者小群体可能直到人口扩张后才开始在洞穴墙上绘画，这也可能导致了更复杂的社会和仪式行为的产生。此外，也有可能是另外一次来自亚洲其他地方的人类迁徙在大约5万年前将岩画带到婆罗洲。",
+        "其他研究人员曾利用铀系列技术对西班牙一洞穴中的红色圆盘进行测定，显示其至少有40,800年的历史。今年的另一份报告指出，尼安德特人在至少64,800年前的西班牙几座洞穴的墙上画了抽象的形状和手印。",
+        "奥贝尔的团队对这项研究提出批评，认为研究人员可能无意中测定了比艺术品更古老的矿物沉积物。如果是这样，西班牙的洞穴艺术可能是由人类而非尼安德特人创造的。",
+        "与此同时，进行尼安德特人洞穴艺术研究的科学家对婆罗洲画作的日期可靠性也表示怀疑。西班牙科学家称，婆罗洲洞穴中矿物沉积的描述不清，难以确定奥贝尔团队是否测定了角动物图像或是其他未识别的图像的邻近画作。"
+    ],
+    "output": [
+        "在婆罗洲岛的一个突破性发现中，研究人员揭示了东南亚的洞穴艺术至少有4万年的历史，且其复杂性与西欧的洞穴艺术相媲美。",
+        "婆罗洲东部的一座石灰岩洞穴内，发现了一幅红橙色的角动物画，可能是曾经生活在该岛的一种野生牛类。这幅画被认为是世界上最古老的画作，创造时间至少为4万年前，格里菲斯大学的马克西姆·奥贝尔领导的研究团队指出。",
+        "除了动物画，洞穴墙壁上还发现了两个红橙色的手印，至少有3.72万年历史，以及一个可能有5.18万年历史的手印。",
+        "在附近的洞穴中，研究人员发现了第二种风格的岩画，约2万年前出现。这些作品包括紫色的人形图像和手印，有些还装饰有线条或点。研究人员指出，一些手印之间通过画线连接。",
+        "团队通过铀系列测年法，分析了绘画上方和下方的矿物沉积物中的铀，来确定这些艺术品的年龄。这项技术此前也曾用于测定印尼苏拉威西岛上的洞穴手印，其制作年代约为4万年前。",
+        "奥贝尔认为，洞穴艺术可能从婆罗洲传播到东南亚其他地区，包括巴布亚和澳大利亚，尽管澳大利亚的艺术作品日期仍然不确定。",
+        "有趣的是，在人类首次抵达东南亚时（约70,000到60,000年前），并没有发现洞穴艺术作品。那时，婆罗洲由于冰河时期海平面下降，曾是欧亚大陆的最东端，这可能解释了为什么早期的定居者直到更晚才开始创作洞穴艺术。",
+        "关于其他洞穴艺术的研究仍在争论中。虽然一些研究人员已将西班牙洞穴中的绘画定日期为至少4.08万年前，奥贝尔团队认为，早期日期可能涉及到远古的矿物沉积，而非艺术作品本身。",
+        "尽管一些科学家质疑婆罗洲画作的日期可靠性，但这一发现仍强调了东南亚洞穴艺术的复杂性和古老起源，挑战了关于该地区史前时期的早期假设。"
+    ]
+  }，
+  {
+    "instruction": "Transform the following jazz music timing study into a science news article:",
+    "input": [
+        "It don’t mean a thing if it ain’t got that swing — all you’ve got to do is stagger your timing.",
+        "For decades, fans of jazz music have debated why some songs have swing — the characteristic swaying feeling that compels feet to tap and heads to bop. Now, scientists may finally have an answer to Louis Armstrong’s classic song “What Is This Thing Called Swing?” and the secret lies in the timing of jazz soloists.",
+        "After listening to original and digitally tweaked piano recordings, jazz musicians were more than seven times as likely to rate music as “swinging” when the soloist’s timing was partially delayed with respect to the rhythm section, researchers report October 6 in *Communications Physics*.",
+        "In jazz, musicians are trained to swing eighth notes, or extend the duration of their downbeats — every other eighth note — and shorten the beats in between to create a galloping rhythm. But the technique on its own doesn’t explain swing, says physicist Theo Geisel. Computer-generated jazz songs with swung eighth notes still lack the style’s swaying feel.",
+        "Past research hinted that swing might arise from differences in the timing between musicians within a band. So Geisel and colleagues tweaked only the timing of the soloists in jazz recordings on a computer and asked professional and semiprofessional jazz musicians to rate each recording’s swing.",
+        "Musicians were nearly 7.5 times as likely to judge music as more swinging when the soloists’ downbeats were minutely delayed with respect to the rhythm section, but not their offbeats.",
+        "In a new study, jazz musicians rated the “swing” of these recordings of the song “Jordu” by Duke Jordan. The first recording is an unaltered version, and the second recording has been manipulated to increase the delay of the soloist’s downbeats by a very small amount. The musicians rated the tweaked recording as having more swing than the original.",
+        "Most of the musicians couldn’t put their finger on what was causing the effect, says Geisel, of the Max Planck Institute for Dynamics and Self-Organization in Göttingen, Germany. “Professional jazz musicians who have played for many years apparently have learned to do this unconsciously.”",
+        "The researchers also analyzed 456 jazz performances from various artists and found almost all soloists used downbeat delays, with an average delay of 30 milliseconds. This average held across the jazz subgenres of bebop, swing, and hardbop, though there was some variation, Geisel says. “For faster tempos, the delays get smaller.”",
+        "Looking ahead, Geisel intends to investigate how “laid-back playing” — a popular style of delaying both downbeats and offbeats in jazz — influences swing."
+    ],
+    "output": [
+        "Swing in jazz — that irresistible rhythmic feel that makes feet tap and heads bop — has long eluded scientific explanation. But now, researchers have uncovered a key ingredient in creating this effect: the timing of jazz soloists.",
+        "In a study published on October 6 in *Communications Physics*, researchers found that jazz musicians were over seven times more likely to rate music as 'swinging' when the soloist's downbeats were slightly delayed compared to the rhythm section.",
+        "In jazz, musicians traditionally swing eighth notes by lengthening downbeats — the first of every two eighth notes — and shortening the notes in between. However, this technique alone doesn’t fully explain the unique 'swaying' feeling of swing, according to physicist Theo Geisel, who conducted the study.",
+        "To investigate, Geisel and his team manipulated the timing of jazz piano recordings on a computer and asked jazz musicians to rate the swing of the tracks. When the soloist’s downbeats were delayed just a tiny amount, musicians rated the music as swinging more than when the timing was uniform.",
+        "The study, which included 456 jazz performances, also revealed that most soloists use downbeat delays, with an average delay of about 30 milliseconds. This pattern was consistent across various jazz styles, such as bebop, swing, and hardbop.",
+        "The results show that timing is key to swing. The researchers plan to explore how other elements of jazz timing, such as 'laid-back playing,' affect the overall feel of swing."
+    ]
+  },
+  {
+    "instruction": "将以下的爵士音乐节奏研究转化为一篇科技新闻：",
+    "input": [
+        "如果没有那种摆动的感觉，那就毫无意义 — 你只需要错开节奏。",
+        "几十年来，爵士乐迷一直在争论为什么有些歌曲有摆动感 — 那种让脚趾跳动、头部点头的特有摇摆感。现在，科学家们可能终于找到了路易斯·阿姆斯特朗经典歌曲《这是什么摆动感？》的答案，而这个秘密就藏在爵士乐独奏者的节奏时机中。",
+        "研究人员在《通讯物理学》杂志上报告称，经过听取原始和经过数字调整的钢琴录音后，当独奏者的节奏相对于节奏组略微延迟时，爵士乐手认为这段音乐更有“摆动感”的可能性是原来的七倍多。",
+        "在爵士乐中，音乐家们会训练将八分音符摇摆，即延长下拍音符的时值——每两个八分音符中的第一个——并缩短两者之间的音符时值，以创造出一种奔跑的节奏。但仅凭这一技巧并不足以解释爵士乐中的摆动感，物理学家西奥·盖塞尔（Theo Geisel）表示，计算机生成的摇摆八分音符的爵士乐歌曲依然缺乏那种摇摆的感觉。",
+        "过去的研究提示，摇摆感可能源于乐队中不同音乐家之间节奏的差异。因此，盖塞尔和同事仅在计算机上调整了独奏者的节奏，并让专业和半专业的爵士乐手对每个录音的摇摆感进行评分。",
+        "当独奏者的下拍音符相对于节奏组略微延迟时，音乐家们认为音乐更有摇摆感的可能性是原来的7.5倍，然而他们的 offbeat 时机并未发生变化。",
+        "在一项新的研究中，爵士乐手对杜克·乔丹（Duke Jordan）歌曲《Jordu》的录音进行了摇摆感的评定。第一版录音是未经过修改的版本，第二版则经过调整，独奏者的下拍音符时值被微小延迟。音乐家们认为修改后的录音比原版更有摇摆感。",
+        "大多数音乐家无法准确指出造成这种效果的原因，盖塞尔表示，来自德国哥廷根马克斯·普朗克动力学与自组织研究所的盖塞尔说：“那些有多年演奏经验的专业爵士乐手显然已经下意识地学会了这种技巧。”",
+        "研究人员还分析了来自不同艺术家的456个爵士乐表演，发现几乎所有的独奏者都使用了下拍延迟，平均延迟为30毫秒。盖塞尔表示，这一平均值适用于bebop、swing和hardbop等各种爵士子流派，尽管存在一些变化。“对于更快的节奏，延迟时间较短。”",
+        "展望未来，盖塞尔打算研究“放松的演奏”——一种延迟下拍和 offbeat 的爵士风格——是如何影响摇摆感的。"
+    ],
+    "output": [
+        "爵士乐中的摇摆感 — 那种让脚趾跳动、头部点头的独特节奏感 — 长期以来一直没有明确的科学解释。现在，研究人员揭示了这一效果的关键成分：爵士独奏者的节奏时机。",
+        "在10月6日发布的《通讯物理学》杂志上的研究中，研究人员发现，当独奏者的下拍音符相对于节奏组稍微延迟时，爵士乐手认为这段音乐有“摇摆感”的可能性比其他录音高出七倍多。",
+        "在爵士乐中，音乐家传统上通过摇摆八分音符来创造节奏感，即延长下拍音符（每两个八分音符中的第一个），并缩短两者之间的音符时值。然而，盖塞尔表示，这一技巧本身并不能完全解释爵士乐中的摇摆感。",
+        "为了解决这一问题，盖塞尔和他的团队在计算机上调整了爵士钢琴录音的节奏，并请爵士乐手对这些曲目的摇摆感进行评分。当独奏者的下拍音符时值被微小延迟时，音乐家们认为音乐的摇摆感比其他录音更强。",
+        "这项研究还分析了456个爵士表演，结果显示大多数独奏者使用下拍延迟，平均延迟约为30毫秒。这个模式在bebop、swing和hardbop等各种爵士风格中都得到了体现。",
+        "研究结果表明，时机对于摇摆感至关重要。研究人员计划探索爵士乐中其他节奏元素，如“放松演奏”是如何影响摇摆感的。"
+    ]
+  },
+  {
+    "instruction": "Transform the following music cognition research into a science news article:",
+    "input": [
+        "Whether you’re rocking out to Britney Spears or soaking up Beethoven’s classics, you may be enjoying music because it stimulates a guessing game in your brain.",
+        "This mental puzzling explains why humans like music, a new study suggests. By looking at activity in just one part of the brain, researchers could predict roughly how much volunteers dug a new song.",
+        "When people hear a new tune they like, a clump of neurons deep within their brains bursts into excited activity, researchers report April 12 in Science. The blueberry-sized cluster of cells, called the nucleus accumbens, helps make predictions and sits smack-dab in the “reward center” of the brain — the part that floods with feel-good chemicals when people eat chocolate or have sex.",
+        "The berry-sized bit acts with three other regions in the brain to judge new jams, MRI scans showed. One region looks for patterns, another compares new songs to sounds heard before, and the third checks for emotional ties.",
+        "As our ears pick up the first strains of a new song, our brains hustle to make sense of the music and figure out what’s coming next, explains coauthor Valorie Salimpoor, who is now at the Baycrest Rotman Research Institute in Toronto. And when the brain’s predictions are right (or pleasantly surprising), people get a little jolt of pleasure.",
+        "All four brain regions work overtime when people listen to new songs they like, report the researchers, including Robert Zatorre of the Montreal Neurological Institute at McGill University.",
+        "The links between the brain’s reward center and the three other areas explain how simple sounds strung together in complex patterns can give humans so much joy, Salimpoor says. Music theorists have speculated that new music might tickle people’s pleasure centers by engaging their minds in play. But until now, no one had matched up the theory to the neurobiology.",
+        "In the study, the researchers examined the brain activity of 19 people as they listened to short clips of new music in an MRI machine. At the end of each clip, volunteers could choose to buy songs they liked, using their own money. The researchers asked them how much they would be willing to pay, $0.99, $1.29 or $2, in a system similar to iTunes. If volunteers did not like a song, they could choose not to buy it.",
+        "Then researchers compared brain scans of participants who bid different amounts on songs. Amid the bustle of activity in the brain, the nucleus accumbens leapt to life when people heard songs they wanted to purchase. The more money people chose to spend, the livelier their nucleus accumbens was while listening.",
+        "Teaming neuroimaging with the iTunes-like system for buying music was “a very clever idea,” says cognitive neuroscientist Aniruddh Patel of Tufts University in Medford, Mass. “It’s a nice application of new technology to address an old theory in music cognition,” he says. And in fact, the new findings seem to fit well with the old theory, he says.",
+        "The results tap into the fundamental ways our brains deal with sound, says auditory neuroscientist Nina Kraus of Northwestern University in Evanston, Ill. “The implications are rather enormous,” she says. The work could help scientists better understand how humans decipher other complex sounds, such as speech."
+    ],
+    "output": [
+        "New research reveals why music may be so enjoyable for humans—it triggers a mental guessing game in our brains.",
+        "A recent study suggests that when people listen to new music, their brains make predictions about what’s coming next, and these predictions play a key role in the pleasure we experience. The brain's reward center, specifically the nucleus accumbens, lights up with activity when people hear songs they like, researchers report in *Science* on April 12.",
+        "The nucleus accumbens, which is about the size of a blueberry, is part of the brain's reward system—an area activated when we enjoy chocolate or intimate experiences. This brain region works alongside other areas to evaluate new music, looking for patterns, comparing sounds to familiar ones, and assessing emotional connections.",
+        "According to coauthor Valorie Salimpoor, now at the Baycrest Rotman Research Institute in Toronto, when our brains make accurate predictions about new songs, or are pleasantly surprised by them, we feel a rush of pleasure.",
+        "The study examined the brain activity of 19 participants while they listened to new music in an MRI machine. After hearing each song, volunteers could choose to buy the song using their own money, with price options similar to those on iTunes. The more money people were willing to spend, the more active their nucleus accumbens became.",
+        "This study suggests that the brain’s reward circuits are crucial for understanding why new music can bring so much joy. It also links neuroimaging technology with real-world behaviors, showing how our brains evaluate music based on both expectations and surprises."
+    ]
+  },
+  {
+    "instruction": "将以下音乐认知研究转化为一篇科技新闻：",
+    "input": [
+        "无论你是在听布兰妮·斯皮尔斯的摇滚，还是沉浸在贝多芬的经典作品中，你可能正在享受音乐，因为它激发了大脑中的一个猜测游戏。",
+        "这项心理学研究解释了人类为何喜欢音乐。通过观察大脑中一个特定部分的活动，研究人员可以大致预测志愿者对一首新歌的喜爱程度。",
+        "当人们听到他们喜欢的新旋律时，大脑深处的一簇神经元会激烈活动，研究人员在4月12日的《科学》杂志中报告称。这个蓝莓大小的细胞群体被称为伏隔核，它有助于进行预测，位于大脑的“奖励中心”——当人们吃巧克力或发生性行为时，这个区域会充满令人愉悦的化学物质。",
+        "这种“浆果大小”的部分与大脑中的其他三个区域共同工作来判断新音乐。MRI扫描显示，其中一个区域寻找模式，另一个区域将新歌与以前听过的声音进行比较，第三个区域则检查情感联系。",
+        "当我们的耳朵捕捉到新歌的第一部分时，大脑会加快速度，努力理解音乐并预测接下来会发生什么，合作作者Valorie Salimpoor解释道，她现在在多伦多的Baycrest Rotman研究所工作。当大脑的预测正确时（或者出乎意料地令人愉快），人们会感到一阵愉悦。",
+        "四个大脑区域在听到他们喜欢的新歌时都会加班工作，研究人员报告称，其中包括麦吉尔大学蒙特利尔神经学研究所的Robert Zatorre。",
+        "大脑奖励中心与其他三个区域之间的联系解释了为何简单的声音通过复杂的模式组合能够给人类带来如此多的乐趣，Salimpoor说道。音乐理论家曾推测，新音乐可能通过激发大脑的游戏机制来逗乐人们的愉悦中心。但直到现在，没有人将这一理论与神经生物学相匹配。",
+        "在这项研究中，研究人员检查了19个参与者的大脑活动，他们在MRI机内听短暂的音乐片段。每个片段结束时，志愿者可以选择用自己的钱购买他们喜欢的歌曲。研究人员询问他们愿意支付的价格，分别为$0.99、$1.29或$2，类似于iTunes系统。如果志愿者不喜欢一首歌，他们可以选择不购买。",
+        "随后，研究人员比较了那些对歌曲出价不同的参与者的大脑扫描。在大脑的活动中，当人们听到他们想购买的歌曲时，伏隔核活跃了起来。人们选择花费的钱越多，在听歌时他们的伏隔核就越活跃。",
+        "将神经成像技术与类似iTunes的音乐购买系统结合使用是“一个非常聪明的想法，”塔夫茨大学的认知神经科学家Aniruddh Patel说道。“这是利用新技术解决音乐认知中的一个老理论的一个很好的应用，”他说。事实上，这些新发现似乎与旧理论很契合。",
+        "这些结果触及了我们大脑处理声音的基本方式，西北大学的听觉神经科学家Nina Kraus说道。“其影响是相当巨大的，”她说。该研究可能帮助科学家更好地理解人类如何解码其他复杂的声音，比如语言。"
+    ],
+    "output": [
+        "新的研究揭示了为何音乐对人类如此愉快——它在我们的大脑中激发了一个心理猜测游戏。",
+        "一项最新研究表明，当人们听到新音乐时，他们的大脑会预测接下来会发生什么，而这些预测在我们体验愉悦时扮演着关键角色。大脑的奖励中心，特别是伏隔核，在人们听到他们喜欢的歌曲时会活跃起来，研究人员在《科学》杂志4月12日的报道中指出。",
+        "伏隔核大约是蓝莓大小，是大脑奖励系统的一部分——当我们享受巧克力或亲密行为时，这一部分会被激活。这个区域与大脑的其他几个区域一起工作来评估新音乐，寻找模式、将新歌与熟悉的声音进行比较，并评估情感联系。",
+        "合著者Valorie Salimpoor解释道，当我们的大脑对新歌做出准确预测时，或者被惊喜所震撼时，我们就会感到一阵愉悦。",
+        "研究检查了19个参与者在MRI扫描下听新音乐时的大脑活动。每首歌播放结束时，志愿者可以选择使用自己的钱购买他们喜欢的歌曲。人们愿意花多少钱，伏隔核就越活跃。",
+        "这项研究表明，大脑的奖励回路对于理解为何新音乐带来如此多的乐趣至关重要。它还将神经成像技术与现实世界行为结合起来，揭示了我们的大脑如何根据期望和惊喜来评估音乐。"
+    ]
+  },
+  {
+    "instruction": "Transform the following archaeological research about vampire burials into a science news article:",
+    "input": [
+        "Excavations in an ancient Roman cemetery turned poignantly eerie last summer.",
+        "In one grave lay a roughly 10-year-old child, possibly the victim of malaria, with a stone inserted in his or her mouth. That practice was part of a funeral ritual intended to prevent the youngster from rising zombie-like and spreading disease to the living, researchers say. Such 'vampire burials' indicate signs of a belief among people of the time that the dead could come back to life.",
+        "The discovery of this vampire burial occurred at the Cemetery of the Babies, a mid-fifth century site in central Italy. Classical archaeologist David Pickel of Stanford University led the excavation. The results, announced in an Oct. 11 statement, will be presented in January at the Archaeological Institute of America’s annual meeting in San Diego.",
+        "A malaria outbreak in the region killed many babies and young children around the time of the child’s burial. Of more than 50 previously excavated graves at the cemetery, the oldest remains were those of a 3-year-old child. Bones of several kids buried there have yielded DNA of malaria parasites.",
+        "Several other vampire burials have been found previously, including a 16th century Venetian woman buried with a brick in her mouth and a man from third or fourth century England whose tongue had been cut out and replaced with a stone.",
+        "Many infants and toddlers interred at the Italian site were accompanied by objects associated with beliefs in witchcraft and magic, such as raven talons and toad bones. Stones had been placed on the hands and feet of the 3-year-old child, another practice used by various cultures to keep the dead in their graves.",
+        "Such rituals attempted to keep whatever evil people thought had fatally contaminated bodies from getting out, says classical archaeologist David Soren of the University of Arizona in Tucson, who participated in the new dig."
+    ],
+    "output": [
+        "An excavation in an ancient Roman cemetery last summer revealed a chilling discovery: the burial of a 10-year-old child, possibly a malaria victim, with a stone placed in the child’s mouth.",
+        "This unusual practice, known as a 'vampire burial,' was intended to prevent the deceased from rising from the grave and potentially spreading disease to the living. Archaeologists believe this practice reflects the ancient belief that the dead could return to life.",
+        "The vampire burial was discovered at the Cemetery of the Babies, a site dating back to the mid-fifth century in central Italy. David Pickel, a classical archaeologist from Stanford University, led the excavation. The findings were revealed in an October 11 statement and will be shared at the Archaeological Institute of America’s annual meeting in January.",
+        "The cemetery was used during a time when a malaria outbreak claimed the lives of many children. DNA analysis of several graves has shown evidence of malaria parasites.",
+        "This latest discovery adds to previous instances of vampire burials, including a 16th-century Venetian woman who was buried with a brick in her mouth, and a man from third or fourth-century England whose tongue was replaced with a stone.",
+        "The graves at the Italian site were also accompanied by objects linked to witchcraft and magic, such as raven talons and toad bones. Other graves featured stones placed on the hands and feet of the deceased to keep them in their graves.",
+        "These ritualistic practices were likely intended to contain the 'evil' believed to have contaminated the body, preventing it from escaping, says David Soren, a classical archaeologist from the University of Arizona."
+    ]
+  },
+  {
+    "instruction": "将以下关于吸血鬼埋葬的考古学研究转化为一篇科技新闻：",
+    "input": [
+        "去年夏天，在一座古罗马墓地的发掘中出现了一个令人痛心且神秘的发现。",
+        "在一个墓穴中，躺着一名大约10岁的儿童，可能死于疟疾，嘴里插着一块石头。研究人员表示，这种做法是当时一种葬礼仪式，旨在防止死者像僵尸一样复生并传播疾病。这种“吸血鬼埋葬”表明当时人们相信死者可能会复生。",
+        "这一吸血鬼埋葬的发现发生在位于意大利中部的‘婴儿墓地’，这是一个建于公元五世纪中期的遗址。斯坦福大学的古典考古学家大卫·皮克尔领导了此次发掘工作。研究结果于10月11日公布，并将在1月的美国考古学会年会上展示。",
+        "该地区发生的疟疾疫情导致许多婴儿和幼儿死亡，而这一儿童的埋葬时间恰逢疫情爆发之际。在墓地中，超过50个已发掘的坟墓中，最古老的遗骸是一名3岁儿童的骨骼。几具儿童遗骸的骨头中提取到了疟疾寄生虫的DNA。",
+        "此前也曾发现过其他吸血鬼埋葬，包括一名16世纪的威尼斯妇女，死后嘴里插着一块砖块；以及一名来自英格兰第三或第四世纪的男子，死后舌头被切除并换成了石块。",
+        "在意大利遗址埋葬的许多婴儿和幼儿的墓中，还随葬了一些与巫术和魔法相关的物品，如渡鸦爪和蟾蜍骨头。3岁儿童的墓穴中，手脚上还放置了石块，这是一种不同文化中常见的做法，用来保持死者留在墓中。",
+        "这些仪式的目的是防止人们认为致命地污染了尸体的‘邪恶’逃逸出去，亚利桑那大学的古典考古学家大卫·索伦说，他也参与了此次发掘工作。"
+    ],
+    "output": [
+        "去年夏天，在一座古罗马墓地的发掘中揭示了一个令人毛骨悚然的发现：一名10岁儿童的埋葬，其中这名儿童可能死于疟疾，嘴里插着一块石头。",
+        "这种不寻常的做法，被称为‘吸血鬼埋葬’，旨在防止死者从坟墓中复生，并可能将疾病传播给活人。考古学家认为，这种做法反映了古人认为死者有可能复生的信仰。",
+        "这一吸血鬼埋葬的发现发生在位于意大利中部的‘婴儿墓地’，这个墓地可追溯到公元五世纪中期。斯坦福大学的古典考古学家大卫·皮克尔领导了此次发掘工作。研究结果于10月11日公布，并将在1月的美国考古学会年会上展示。",
+        "墓地的使用时间正值疟疾疫情肆虐，导致许多儿童死亡。对几具墓葬的DNA分析显示，骨骼中含有疟疾寄生虫的DNA。",
+        "这一新发现进一步丰富了此前发现的吸血鬼埋葬实例，包括16世纪威尼斯一名妇女死后嘴里插着一块砖，以及来自英格兰第三或第四世纪的一名男子死后舌头被切除并换上了石块。",
+        "在意大利遗址的墓葬中，还发现了一些与巫术和魔法相关的物品，如渡鸦爪和蟾蜍骨头。其他墓葬中，死者的手脚上还放置了石块，这是一种不同文化中常见的做法，用来保持死者留在墓中。",
+        "这些仪式的目的是防止认为死者身体受到致命污染的‘邪恶’逃逸出去，亚利桑那大学的古典考古学家大卫·索伦表示，他也参与了此次发掘工作。"
+    ]
+  },
+  {
+    "instruction": "Transform the following archaeological research on winemaking into a science news article:",
+    "input": [
+        "French winemakers learned their art after developing a taste for Italian wines, a new study suggests.",
+        "Archaeologists have found traces of grapes on a stone platform dated to 425 to 400 B.C. from a site in southern France. The traces suggest that people used the platform for stomping on the fruit to make wine. The researchers also found wine traces at the same site in older, imported amphorae, the pottery shipping containers of the ancient Mediterranean.",
+        "The wine press provides the earliest molecular evidence for wine-making in France and the traces in the amphorae support the idea that local wine-making was inspired by trade with Etruscans from Italy, researchers report June 3 in the Proceedings of the National Academy of Sciences.",
+        "People first made wine around 6,000 years ago in the mountains of Iran, Armenia and Georgia. Seafaring traders, including Canaanites, Phoenicians, Greeks and Etruscans, then spread across the Mediterranean with the domesticated grape vine, wine-making techniques and a culture of wine drinking.",
+        "Archaeologists think the first wine industries in France started in the sixth century B.C., but did not have chemical evidence for ancient wine production.",
+        "So Patrick McGovern of the University of Pennsylvania Museum of Archaeology and Anthropology and colleagues analyzed samples from merchant quarters in the ancient French port of Lattara, south of Montpellier, where researchers previously found grape seeds. The samples came from Etruscan amphorae dated to around 525 to 475 B.C.",
+        "Using highly sensitive chemical analysis, the team detected tartaric acid — a molecular fingerprint of grapes — in the samples. They also found that the wine contained aromatic herbs such as rosemary and basil, as well as pine resin. The winemakers may have added resin for medicinal reasons or as a preservative.",
+        "The French taste for imported wine eventually led to a local industry, McGovern and his colleagues think. The team tested a limestone platform from a fifth century B.C. courtyard. The platform has a spout, resembles wine presses depicted on Greek vases and could have held a basket in which a person stomped on grapes.",
+        "The researchers detected tartaric acid on the platform, confirming that it was used to make wine.",
+        "Because wine played such a central role in the religion, politics, medicine and art of the ancient world, the researchers’ work is important, says Brendan Foley, an archaeologist at Woods Hole Oceanographic Institution in Massachusetts. “They are not merely tracing the introduction of an agricultural product in Italy and France,” he says. “They are discovering a cornerstone of Western civilization.”"
+    ],
+    "output": [
+        "New research suggests that French winemakers may have learned their craft after developing a taste for Italian wines. Archaeologists have uncovered evidence of early winemaking in France, with traces of grapes found on a stone platform dated to 425–400 B.C. in southern France.",
+        "The platform, which was likely used for stomping grapes to make wine, provides the earliest molecular evidence of winemaking in the country. Additionally, researchers found evidence of wine in imported Etruscan amphorae at the same site, supporting the idea that local winemaking in France was influenced by trade with the Etruscans of Italy.",
+        "The discovery offers new insights into the spread of winemaking techniques, which originated around 6,000 years ago in the mountainous regions of Iran, Armenia, and Georgia. Over time, wine culture spread across the Mediterranean, carried by seafaring traders such as the Canaanites, Phoenicians, Greeks, and Etruscans.",
+        "While French wine production is thought to have begun in the sixth century B.C., chemical evidence of early wine production had been lacking until now. Researchers from the University of Pennsylvania Museum of Archaeology and Anthropology analyzed samples from the ancient French port of Lattara, located south of Montpellier. The samples, found in Etruscan amphorae dating to 525–475 B.C., revealed the presence of tartaric acid, a chemical signature of grapes.",
+        "The analysis also showed traces of aromatic herbs like rosemary and basil, as well as pine resin, which may have been used for medicinal purposes or as a preservative. This discovery helps confirm that the French gradually established their own local wine industry, inspired by the tastes of imported wines from Italy.",
+        "The study’s findings also point to the use of a limestone platform in a fifth-century B.C. courtyard, likely used as a wine press, further supporting the idea that winemaking was taking root in France. Researchers detected tartaric acid on the platform, confirming that it was used for wine production.",
+        "This discovery highlights the role of wine in ancient Mediterranean society, which was deeply intertwined with religion, politics, medicine, and art. As Brendan Foley, an archaeologist from Woods Hole Oceanographic Institution, notes, “They are not merely tracing the introduction of an agricultural product in Italy and France, they are discovering a cornerstone of Western civilization.”"
+    ]
+  },
+  {
+    "instruction": "将以下关于酿酒的考古学研究转化为一篇科技新闻：",
+    "input": [
+        "法国酿酒师是在对意大利葡萄酒产生兴趣后，学习了酿酒的艺术，一项新的研究表明。",
+        "考古学家在法国南部的一个遗址上发现了一个石平台上的葡萄痕迹，日期为公元前425年至400年。这些痕迹表明人们使用该平台踩葡萄酿酒。研究人员还在同一地点的古老进口酒瓶中发现了葡萄酒的痕迹，这是古地中海地区的陶器运输容器。",
+        "这座葡萄酒压榨平台提供了法国酿酒的最早分子证据，而酒瓶中的葡萄酒痕迹支持了这样的观点：当地的酿酒技术受到了与意大利伊特鲁里亚人贸易的启发，研究人员在《美国国家科学院院刊》6月3日的报告中写道。",
+        "人类最早在约6000年前开始在伊朗、亚美尼亚和格鲁吉亚的山区酿酒。海上商人，包括迦南人、腓尼基人、希腊人和伊特鲁里亚人，随后将栽培的葡萄藤、酿酒技术和饮酒文化传播到地中海地区。",
+        "考古学家认为法国最早的酿酒工业出现在公元前六世纪，但此前没有关于古代酿酒生产的化学证据。",
+        "因此，宾夕法尼亚大学考古与人类学博物馆的帕特里克·麦戈文（Patrick McGovern）和同事分析了来自法国古港口拉特拉（Lattara）商人区的样本，这些样本之前已经发现了葡萄种子。这些样本来自公元前525年至475年间的伊特鲁里亚酒瓶。",
+        "通过高度敏感的化学分析，研究小组在样本中检测到了酒石酸——葡萄的分子指纹。他们还发现葡萄酒中含有香料草本植物如迷迭香和罗勒，以及松香。酿酒师可能是出于药用目的或作为防腐剂添加松香。",
+        "麦戈文和他的同事认为，法国人对进口葡萄酒的兴趣最终催生了当地的酿酒业。研究小组检测了一块公元前五世纪的石灰岩平台。该平台有一个喷口，类似于古希腊花瓶上描绘的葡萄酒压榨机，可能用于放置一个篮子，供人踩葡萄。",
+        "研究人员在平台上检测到了酒石酸，证实它曾被用于酿酒。",
+        "由于葡萄酒在古代世界的宗教、政治、医学和艺术中占有如此重要的地位，研究人员的工作意义重大，马萨诸塞州伍兹霍尔海洋学研究所的考古学家布伦丹·福雷说：“他们不仅仅是在追溯意大利和法国农业产品的引入，”他说，“他们是在发现西方文明的基石。”"
+    ],
+    "output": [
+        "新的研究表明，法国酿酒师可能是在对意大利葡萄酒产生兴趣后，学习了酿酒的艺术。考古学家在法国南部的一个遗址上发现了公元前425至400年的石平台上的葡萄痕迹。",
+        "该平台可能用于踩葡萄酿酒，提供了法国酿酒的最早分子证据。此外，研究人员在同一地点的进口伊特鲁里亚酒瓶中发现了葡萄酒的痕迹，这支持了当地酿酒业受到与意大利伊特鲁里亚人贸易的启发的观点。",
+        "这一发现为葡萄酒酿造技术的传播提供了新的见解。大约6000年前，葡萄酒文化起源于伊朗、亚美尼亚和格鲁吉亚的山区。随着时间的推移，葡萄酒文化通过迦南人、腓尼基人、希腊人和伊特鲁里亚人等海上商人传播到地中海地区。",
+        "虽然法国酿酒业被认为始于公元前六世纪，但此前缺乏古代酿酒生产的化学证据。宾夕法尼亚大学考古与人类学博物馆的研究人员分析了来自法国古港口拉特拉的样本，样本来自公元前525至475年间的伊特鲁里亚酒瓶，发现了酒石酸这一葡萄的化学标志。",
+        "分析还显示，葡萄酒中含有迷迭香和罗勒等香料草本植物，以及松香，这可能用于药用或作为防腐剂。这一发现有助于证实法国人逐渐建立了自己的当地酿酒业，受意大利进口葡萄酒的启发。",
+        "研究结果还指向了一块公元前五世纪的石灰岩平台，可能用于作为葡萄酒压榨机，进一步支持了酿酒业在法国扎根的观点。研究人员在平台上检测到了酒石酸，证实它曾用于酿酒。",
+        "这一发现突显了葡萄酒在古代地中海社会中的重要作用，葡萄酒深刻影响了宗教、政治、医学和艺术。正如马萨诸塞州伍兹霍尔海洋学研究所的考古学家布伦丹·福雷所说：“他们不仅仅是在追溯意大利和法国农业产品的引入，他们是在发现西方文明的基石。”"
+    ]
+  },
+  {
+    "instruction": "Transform the following archaeological research into a science news article:",
+    "input": [
+        "Discoveries in a richly appointed 2,600-year-old burial chamber point to surprisingly close ties between Central Europe’s earliest cities and Mediterranean societies. Dated to 583 B.C., this grave also helps pin down when people inhabited what may have been the first city north of the Alps.",
+        "An array of fine jewelry, luxury goods and even a rare piece of horse armor found in the grave indicates that 'there were craftsmen working in the early Celtic centers north of the Alps who learned their crafts south of the Alps,' says archaeologist Dirk Krausse of the Archaeological State Office of Baden-Württemberg, Germany.",
+        "Previous research has established that speakers of Celtic languages inhabited parts of Europe as early as 3,300 years ago. Celtic iron makers appeared in Central Europe by around 2,700 years ago — marking the beginning of that region’s Iron Age — and founded what’s now called the Hallstatt culture.",
+        "The grave and a smaller adjoining burial lie in a German cemetery situated across the Danube River from an early Iron Age hill fort called the Heuneburg. Along with yielding insights into long-distance trade and the timing of Europe’s first Iron Age cities, these graves provide the earliest evidence of Hallstatt people elaborately interring women and even children, Krausse and colleagues report in the February Antiquity.",
+        "The main burial represents one of the oldest examples of an exceptionally rich female grave and serves as further testimony of the important social role of certain women in Hallstatt communities.”
+    ],
+    "output": [
+        "In a remarkable discovery in a 2,600-year-old burial chamber in Germany, archaeologists have uncovered surprising evidence of early cultural exchanges between Central Europe’s Hallstatt culture and Mediterranean societies.",
+        "The burial, dated to 583 B.C., contains a rich array of jewelry, luxury items, and even a rare piece of horse armor, suggesting that artisans in early Celtic communities north of the Alps were influenced by their southern counterparts. This discovery offers important insights into how early European cities may have developed relationships with Mediterranean cultures.",
+        "The grave site, located near the Heuneburg hill fort across the Danube River, also provides valuable information about the timing of Central Europe's first cities and the role of women and children in burial practices during the Hallstatt period.",
+        "Dirk Krausse, an archaeologist from the Archaeological State Office of Baden-Württemberg, emphasized that the findings indicate a complex exchange of cultural and technological knowledge between southern and northern Europe long before the rise of later empires.",
+        "This rich burial chamber is also one of the earliest examples of elite female graves in the Hallstatt culture, demonstrating the prominent social roles women held in these early communities."
+    ]
+  },
+  {
+    "instruction": "将以下考古学研究转化为一篇科技新闻：",
+    "input": [
+        "在一个富丽堂皇的2600年前的墓室中，考古学家的发现表明中欧最早的城市与地中海社会之间存在着惊人的紧密联系。该墓葬的年代为公元前583年，同时也帮助确立了可能是阿尔卑斯山以北的第一个城市的居民时间。",
+        "墓中发现的精美珠宝、奢侈品甚至一件罕见的马铠表明，“阿尔卑斯山以北的早期凯尔特中心的工匠曾在阿尔卑斯山以南学习他们的技艺，”德国巴登-符腾堡州考古州立办公室的考古学家迪尔克·克劳塞（Dirk Krausse）说道。",
+        "先前的研究表明，讲凯尔特语言的民族早在3300年前就已经在欧洲部分地区定居。大约2700年前，凯尔特铁匠出现在中欧，标志着该地区铁器时代的开始，并创立了现在被称为哈尔斯塔特文化的文明。",
+        "这个墓葬和一个较小的附属墓位于德国一个墓地，该墓地位于一座早期铁器时代的山顶堡垒——海嫩堡的对面。除了提供关于远距离贸易的见解以及欧洲首批铁器时代城市的时间线外，这些墓葬还提供了哈尔斯塔特人精心埋葬女性甚至儿童的最早证据，克劳塞及其同事在《古物学》期刊的二月号中报告了这一发现。",
+        "这一主墓葬是最古老的、异常富裕的女性墓葬之一，并进一步证明了某些女性在哈尔斯塔特社区中重要的社会角色。”"
+    ],
+    "output": [
+        "在德国一个2600年前的墓室中，考古学家们作出了惊人的发现，揭示了中欧哈尔斯塔特文化与地中海社会之间早期文化交流的证据。",
+        "该墓葬的年代为公元前583年，里面包含了一系列珍贵珠宝、奢侈品，甚至一件罕见的马铠，这表明阿尔卑斯山以北的早期凯尔特社区的工匠受到了南方工艺的影响。这一发现提供了关于早期欧洲城市如何与地中海文化建立关系的重要见解。",
+        "墓葬位于海嫩堡山顶堡垒对面的德国墓地，也为中欧第一个城市的时间和哈尔斯塔特文化时期女性和儿童的葬礼习俗提供了宝贵的信息。",
+        "德国巴登-符腾堡州考古州立办公室的考古学家迪尔克·克劳塞强调，这些发现表明，在北欧和南欧之间，早期就存在着复杂的文化和技术知识交流。",
+        "这一富有盛誉的墓葬也是哈尔斯塔特文化中最早的女性贵族墓葬之一，展示了女性在这些早期社区中所扮演的重要社会角色。"
+    ]
+  },
+  {
+    "instruction": "Transform the following ethnomusicological research into a science news article:",
+    "input": [
+        "While searching for shipwreck remains near Oman in the Arabian Sea in 2014, divers discovered an unusual metal disk that has since proven to be the world’s oldest known mariner’s astrolabe, British researchers report.",
+        "The navigational device came from the wreckage of a ship in the Portuguese armada that had been part of explorer Vasco da Gama’s second voyage to India from 1502 to 1503. Historical decorations on the artifact led the researchers to suggest that the disk was used as early as 1496.",
+        "A bit wider than a dollar bill, the astrolabe contains carvings of Portugal’s royal coat of arms and a depiction of a ringed Earth that was associated with a Portuguese king who ruled from late 1495 to 1521. Laser imaging of the disk revealed 18 scale marks separated at 5-degree intervals.",
+        "The device, used to take altitudes at sea, could have measured from 0 degrees — when the sun is at the horizon — to 90 degrees — when the sun is directly overhead, the team reports in a study published online March 16 in the International Journal of Nautical Archaeology. Only one other solid disk, mariner’s astrolabe has been found, and its authenticity and age are uncertain, say oceanographer David Mearns and colleagues. Mearns directs Blue Water Recoveries in Midhurst, England, a company that locates and studies shipwrecks.",
+        "Of 104 artifacts known to have been used as mariner’s astrolabes, the new find is not only the oldest, but also the only one decorated with a national symbol, the researchers say. By the early 1500s, most navigators had adopted more precise, open-wheeled astrolabes."
+    ],
+    "output": [
+        "In 2014, divers off the coast of Oman made an extraordinary discovery that has rewritten maritime history: they found the world’s oldest known mariner’s astrolabe, a navigational device used by sailors to determine latitude.",
+        "This astrolabe was part of the wreckage of a ship from the Portuguese armada, which had sailed with Vasco da Gama on his second voyage to India between 1502 and 1503. The unique historical decorations on the artifact suggest that the astrolabe may have been in use as early as 1496.",
+        "The disk is slightly larger than a dollar bill and features carvings of the royal coat of arms of Portugal, along with an image of a ringed Earth that was linked to King Manuel I of Portugal, who ruled from 1495 to 1521. Laser imaging has revealed that the device contains 18 scale marks, each separated by 5-degree intervals.",
+        "Used to measure the altitude of the sun at sea, this astrolabe could have taken measurements ranging from 0 degrees (when the sun is at the horizon) to 90 degrees (when the sun is directly overhead), as reported by researchers in the *International Journal of Nautical Archaeology* on March 16.",
+        "Although other mariner’s astrolabes have been found, this new discovery is not only the oldest but also the only one with national symbols, highlighting its unique historical value. By the early 1500s, most sailors had switched to more precise, open-wheeled astrolabes."
+    ]
+  },
+  {
+    "instruction": "将以下民族音乐学研究转化为一篇科技新闻：",
+    "input": [
+        "2014年，在阿曼附近的阿拉伯海进行沉船遗址的搜索时，潜水员发现了一个不寻常的金属圆盘，后来证明它是世界上已知的最古老的航海用天文仪，英国研究人员报告称。",
+        "这件导航设备来自一艘葡萄牙舰队的沉船，该舰队是探险家瓦斯科·达·伽马于1502至1503年间第二次前往印度的航程的一部分。根据该文物上的历史装饰，研究人员推测该圆盘最早使用于1496年。",
+        "该天文仪比一张美元钞票稍宽，刻有葡萄牙皇家徽章和一个环形地球的图案，这一图案与葡萄牙国王曼努埃尔一世（他从1495年到1521年执政）相关联。激光成像技术揭示了圆盘上有18个按每5度间隔分布的刻度。",
+        "该设备用于测量海上太阳的高度，从0度（太阳在地平线处）到90度（太阳正好在头顶）都可以进行测量，研究小组在3月16日在线发表在《国际航海考古学杂志》上的研究中报告了这一发现。",
+        "目前已知有104个航海天文仪文物，其中这一新发现不仅是最古老的，也是唯一一件装饰有国家象征的天文仪，研究人员表示。到了1500年代初，大多数航海者已采用了更为精确的开轮天文仪。"
+    ],
+    "output": [
+        "2014年，阿曼海岸的潜水员们做出了一个非凡的发现，这一发现重新书写了海洋历史：他们找到了世界上已知的最古老的航海天文仪，这是一种航海工具，用于确定纬度。",
+        "这件天文仪来自葡萄牙舰队的沉船，舰队曾与瓦斯科·达·伽马一同在1502至1503年间进行第二次印度之行。文物上的独特历史装饰表明，这件天文仪最早可能使用于1496年。",
+        "该圆盘稍大于一张美元钞票，刻有葡萄牙皇家徽章，以及与葡萄牙国王曼努埃尔一世（他从1495年到1521年执政）相关联的环形地球图案。激光成像技术揭示了圆盘上有18个按每5度间隔分布的刻度。",
+        "这件天文仪用于测量海上太阳的高度，测量范围从0度（太阳位于地平线）到90度（太阳位于正上方），正如研究人员在《国际航海考古学杂志》3月16日刊登的报告中所描述的那样。",
+        "尽管已发现其他航海天文仪，这一新发现不仅是最古老的，而且是唯一一件装饰有国家象征的天文仪，凸显了它的独特历史价值。到1500年代初，大多数航海者已转向使用更为精确的开轮天文仪。"
+    ]
+  },
+  {
+    "instruction": "Transform the following archaeological research on early Chinese weaving technology into a science news article:",
+    "input": [
+        "As one of the important luxury products of early China, discoveries of silk, and evidence of the weaving technology used in the production of silk textiles, are of great significance. New light has been thrown on this technology by the discovery, in 2013, of an exceptional find: four wooden models of pattern looms, and associated figurines and paraphernalia from a model textile workshop, excavated from a Han Dynasty burial at Laoguanshan, Chengdu, south-west China. These date to the second half of the second century BC, and are the earliest evidence for the use of pattern looms in China (Chengdu Institute of Archaeology & Jinzhou Conservation Center for Cultural Heritage 2014). Their discovery points to an ancient Chinese origin for a technology that revolutionised silk production throughout the rest of Asia and Europe.",
+        "Laoguanshan is located in the northern part of the Chengdu municipality in Sichuan province. This was part of the ancient kingdom of Shu, which was a classical production centre for jin silk (a polychrome woven textile) in early times from the Qin to Tang Dynasties (second century BC to ninth century AD). It had good connections with north-west China, and it was via this route that the jin silk was exported to the Silk Road.",
+        "A pattern loom is a weaving device with a set of shafts with heddles (or harnesses—a glossary of terms used throughout the article is included at the end of the text) that allow a pattern programme to be installed and used to create continuous repeating patterns. The Chinese word for loom, chi (or ji), represents the outline of a loom and embodies the ancient Chinese concept of technology and machinery par excellence (Needham 1988). The loom plays a vital role in the history of Chinese textiles, but also in the global history of science and technology. Until 2014, however, our knowledge of the early history of the pattern loom was limited to textual references and excavated patterned textiles. The pattern loom models excavated from Laoguanshan document, for the first time, the early history of this technology in artefact form. The loom models are thus key to the technology of silk pattern weaving. Moreover, and unexpectedly, they testify to the very advanced weaving technology of the treadle loom in East Asia as early as the second century BC, a technology that was not known in the West until a millennium later.",
+        "Four model pattern looms, with devices for warping, rewinding and weft winding, were found in tomb two at Laoguanshan, along with 15 painted wooden figurines, each with their name written on the breast and probably representing weavers or weaving-related workers (Figure 1). The size of the whole set, including loom and accompanying weaver figurines, is approximately one-sixth that of life size."
+    ],
+    "output": [
+        "In a groundbreaking discovery from 2013, archaeologists uncovered four wooden models of pattern looms, along with figurines and tools, in a Han Dynasty tomb at Laoguanshan, Chengdu, southwestern China. This remarkable find, dating back to the second half of the second century BC, represents the earliest known evidence of pattern looms used in ancient China.",
+        "Laoguanshan, part of the ancient Shu kingdom, was a key center for jin silk production, a colorful woven textile, from the Qin to Tang Dynasties. These looms were instrumental in the production of this silk, which eventually found its way to the Silk Road, influencing trade across Asia and Europe.",
+        "The discovery sheds new light on the technological advancements of ancient China. A pattern loom is a complex weaving device that allows the creation of intricate, repeating patterns. The looms uncovered at Laoguanshan offer the first physical evidence of such technology, which played a pivotal role in the development of silk weaving. Additionally, these looms reveal the advanced nature of Chinese weaving techniques, which utilized treadle looms centuries before similar technologies appeared in the West.",
+        "The excavation also revealed 15 painted wooden figurines, likely representing weavers or workers associated with the textile trade. The entire set, including the looms and figurines, is about one-sixth the size of real life, offering a glimpse into the scale of this ancient textile workshop.",
+        "These findings not only provide insight into ancient Chinese silk production but also highlight the significance of early weaving technology in global history. The models discovered at Laoguanshan are believed to be the earliest known pattern looms in the world, marking a milestone in the evolution of textile production and paving the way for future advancements in weaving technology."
+    ]
+  },
+  {
+    "instruction": "将以下关于中国早期织造技术的考古研究转化为一篇科技新闻：",
+    "input": [
+        "作为早期中国重要的奢侈品，丝绸的发现以及用于生产丝绸织物的织造技术的证据具有重大意义。2013年，在中国四川省成都市的老关山墓葬中，考古学家发现了四个极具价值的织图机木模型以及与之相关的雕像和工具。这些遗物的年代可追溯到公元前二世纪后半期，是中国最早使用织图机的证据。这一发现表明，中国古代的这一技术为丝绸生产的革新做出了贡献，影响了亚洲和欧洲其他地区。",
+        "老关山位于四川省成都市北部，属于古蜀国的一部分，蜀国是中国历史上一个重要的金丝绸（彩色织物）生产中心，历时从秦朝到唐朝（公元前二世纪至公元九世纪）。它与中国西北部有着良好的联系，金丝绸正是通过这条路线出口到丝绸之路。",
+        "织图机是一种具有多个经轴和梭子（或称为架子的织机）设备，可以设置并使用模式程序来创建连续的重复图案。中国的织机（chi或ji）一词代表了织机的轮廓，体现了中国古代技术与机械的概念。织机在中国纺织品历史中起着至关重要的作用，但在全球科技史上也具有举足轻重的地位。直到2014年，我们对织图机早期历史的了解仍仅限于文献资料和已发掘的图案织物。来自老关山的织图机模型首次以实物形式记录了这一技术的早期历史。这些模型因此成为丝绸图案织造技术的关键。此外，它们还出乎意料地证明了东亚在公元前二世纪就已掌握了踏脚织机的先进技术，而这一技术直到千年后才为西方所知。",
+        "四个织图机模型以及一些与之相关的工具、织物和15个画有名字的木制雕像被发现在老关山的墓葬二号墓中，这些雕像可能代表了织布工或与织布有关的工人。整个模型集（包括织机和附带的织布工雕像）的大小约为实物的六分之一。"
+    ],
+    "output": [
+        "2013年，考古学家在四川省成都市的老关山墓葬中发现了四个木制织图机模型及其相关的雕像和工具。这一令人震惊的发现，距今约有二千多年，代表了中国最早的织图机使用证据。",
+        "老关山，作为古蜀国的一部分，是金丝绸生产的核心地区，这种彩色织物在秦至唐朝期间成为了重要的贸易商品。这些织机在金丝绸生产中扮演了重要角色，最终通过丝绸之路影响了亚洲和欧洲的贸易。",
+        "这一发现揭示了中国古代的技术进步。织图机是一种复杂的织造设备，可以创建精细的重复图案。老关山出土的织图机模型首次提供了这一技术的实物证据，显示了它在丝绸织造历史中的重要作用。此外，这些模型也证明了中国的织造技术在公元前二世纪已非常先进，而这一技术在西方直到千年后才出现。",
+        "此外，考古学家还发现了15个画有名字的木制雕像，可能代表了织布工或与织布工艺相关的工人。包括织机和雕像在内的整个模型集大约是实物的六分之一大小，展示了这一古代织物工作坊的规模。",
+        "这些发现不仅为中国古代丝绸生产提供了新见解，也突出了织造技术在全球历史中的重要性。老关山出土的织图机模型被认为是世界上最早的织图机，标志着织物生产技术演变的重要里程碑，为后来的织造技术进步铺平了道路。"
+    ]
+  },
+  {
+    "instruction": "Transform the following cultural and historical research into a science news article:",
+    "input": [
+        "An ancient tomb in southern China has provided the oldest known examples, in scaled-down form, of revolutionary weaving machines called pattern looms. Four immobile models of pattern looms illuminate how weavers first produced silk textiles with repeating patterns. The cloths were traded across Eurasia via the Silk Road, Chinese archaeologists report in the April Antiquity. The models, created between 2,200 and 2,100 years ago, predate other evidence of pattern looms by several hundred years.",
+        "Red and brown silk threads still clung to the model looms. The largest stood half a meter tall. A reconstruction of that model includes two foot pumps connected to beams, shafts, and other parts. A full-scale device with moving parts would have woven repeating geometric designs on clothing and other items made of silk, a technique that transformed the textile’s production.",
+        "These 2013 discoveries, made of wood and bamboo, supply the first direct evidence that pattern looms were invented in ancient China. Such looms are mentioned in ancient Chinese texts, but actual examples of the loom technology were lacking. Pattern looms influenced the design of another type of weaving machine that appeared in China within the next few hundred years and then spread to Persia, India, and Europe, the researchers suspect."
+    ],
+    "output": [
+        "In a remarkable discovery, an ancient tomb in southern China has revealed the world’s oldest known examples of pattern looms—innovative weaving machines that revolutionized the production of silk textiles.",
+        "The tomb contained four immobile models of pattern looms, dating back over 2,100 years, offering the earliest evidence of these devices, which were used to weave intricate repeating patterns. The discovery predates any known examples of pattern looms by several centuries, according to Chinese archaeologists.",
+        "The largest of the models stands about half a meter tall and still shows traces of red and brown silk threads on its frame. A reconstruction of this model includes two foot pumps connected to beams and shafts, which would have powered a full-scale version of the loom. This device would have been capable of weaving repeating geometric designs into silk garments and textiles, a process that revolutionized textile production in ancient China.",
+        "The 2013 discovery, made from wood and bamboo, marks the first direct evidence of pattern looms invented in ancient China. While these looms are mentioned in ancient Chinese texts, no physical examples had been found until now. The findings suggest that pattern looms influenced the design of later weaving machines, which spread across Persia, India, and Europe over the following centuries."
+    ]
+  },
+  {
+    "instruction": "将以下文化与历史研究转化为一篇科技新闻：",
+    "input": [
+        "中国南方的一座古墓提供了世界上已知最古老的缩小版革命性织布机——图案织机的例子。四个静止的图案织机模型揭示了织工们如何首先制作出具有重复图案的丝绸织物。通过丝绸之路，这些织物在欧亚之间进行贸易，中国考古学家在《Antiquity》四月刊中报告。根据研究，模型的制作时间大约在2200到2100年前，远早于其他图案织机的证据。",
+        "红色和棕色的丝绸线仍然附着在这些模型织机上。最大的一个模型高约半米。对该模型的重建包括两个脚踏泵，连接到梁、轴和其他部件。一个完整的设备，拥有活动部件，将能够在丝绸衣物和其他物品上编织出重复的几何图案，这一技术改变了纺织品的生产方式。",
+        "这些2013年的发现，由木材和竹子制成，为我们提供了直接证据，证明图案织机是在古代中国发明的。尽管古代中国文献中提到过这种织机，但直到现在才找到实际的技术样本。研究人员推测，图案织机影响了随后的织布机设计，这些设计在接下来的几百年中传播到了波斯、印度和欧洲。"
+    ],
+    "output": [
+        "在一次引人注目的发现中，中国南方的一座古墓揭示了世界上最古老的图案织机——这些革命性的织布机彻底改变了丝绸织物的生产方式。",
+        "墓中出土了四个静止的图案织机模型，距今已有2100多年，提供了最早的证据，表明这些设备用于编织复杂的重复图案。这一发现比已知的其他图案织机早了几个世纪，正如中国考古学家所报告的那样。",
+        "其中最大的模型约有半米高，框架上仍然能看到红色和棕色的丝绸线。该模型的重建包括两个脚踏泵，连接到梁和轴上，这些装置将为完整的织机提供动力，能够将重复的几何图案织入丝绸衣物和纺织品，这一技术彻底改变了古代中国的纺织生产。",
+        "这些2013年的发现由木材和竹子制成，标志着首次直接证据，证明图案织机是在古代中国发明的。虽然古代中国文献中提到过这种织机，但直到现在才找到了实际的样本。研究结果表明，图案织机影响了后来的织布机设计，这些设计在随后的几百年里传播到波斯、印度和欧洲。"
+    ]
+  }
+]
