@@ -1,0 +1,1 @@
+Never read any json file except example.json
