@@ -33,6 +33,7 @@ from enhanced_corpus_reader import EnhancedCorpusReader, TextExtractionStrategy,
 from analyzers.vocabulary_analyzer import VocabularyAnalyzer
 from analyzers.enhanced_academic_analyzer import EnhancedAcademicAnalyzer
 from analyzers.discipline_comparator import DisciplineComparator
+from analyzers.genre_comparator import GenreComparator
 
 
 class IntegratedGenreDisciplineAnalysis:
@@ -71,14 +72,21 @@ class IntegratedGenreDisciplineAnalysis:
                 "calculate_differences": True,
                 "compare_pairs": True,
                 "compare_to_overall": True
+            },
+            "genre_comparator": {
+                "calculate_differences": True,
+                "compare_pairs": True,
+                "compare_to_overall": True,
+                "calculate_statistical_significance": False,
+                "genre_field": "genre"
             }
         }
         
-        # 颜色映射
+        # SCI配色方案 - 专业学术图表配色
         self.colors = {
-            'discipline': ['#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf'],
-            'genre': ['#393b79', '#5254a3', '#6b6ecf', '#9c9ede', '#637939'],
-            'mixed': ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b']
+            'discipline': ['#264653', '#2A9D8F', '#E9C46A', '#F4A261', '#E76F51'],  # 深蓝、青绿、黄色、橙色、红色
+            'genre': ['#003F5C', '#58508D', '#BC5090', '#FF6361', '#FFA600'],  # 深蓝、紫色、粉色、红色、金色
+            'mixed': ['#2E86AB', '#A23B72', '#F18F01', '#C73E1D', '#6A994E', '#264653']  # 混合配色
         }
         
     def analyze_last_version(self, max_documents: int = None) -> Tuple[Dict[str, Any], List[Any]]:
@@ -274,11 +282,42 @@ class IntegratedGenreDisciplineAnalysis:
             print(f"   跳过学科对比：只有 {len(discipline_groups)} 个学科")
             
         # 体裁对比分析
-        source_groups = self.reader.group_by_classification(documents, ClassificationField.SOURCE_FILE)
-        if len(source_groups) > 1:
-            print(f"   体裁对比分析...")
-            source_stats = self._analyze_source_comparison(source_groups)
-            results["genre_comparison"] = source_stats
+        print(f"   体裁对比分析...")
+        
+        # 准备体裁元数据
+        genre_metadata = self._prepare_genre_metadata(documents)
+        
+        # 使用GenreComparator进行体裁对比分析
+        genre_comparator = GenreComparator(f"{version}_genre_comparator", 
+                                         self.analyzer_configs["genre_comparator"])
+        genre_comparison_results = genre_comparator.analyze(texts, genre_metadata)
+        
+        if genre_comparison_results and "error" not in genre_comparison_results:
+            stats = genre_comparison_results["basic_statistics"]
+            print(f"     分析体裁数: {stats['total_genres']}")
+            print(f"     体裁列表: {', '.join(stats['genres_analyzed'])}")
+            
+            # 显示体裁指标
+            if "genre_metrics" in genre_comparison_results:
+                genre_metrics = genre_comparison_results["genre_metrics"]
+                for genre, metrics in genre_metrics.items():
+                    print(f"     {genre}:")
+                    for metric, value in metrics.items():
+                        if isinstance(value, (int, float)):
+                            print(f"       {metric}: {value:.4f}")
+            
+            # 显示显著差异
+            if "differences_analysis" in genre_comparison_results:
+                diffs = genre_comparison_results["differences_analysis"]
+                if "max_min_differences" in diffs:
+                    for metric, info in diffs["max_min_differences"].items():
+                        if info['relative_range_percent'] > 20:
+                            print(f"     {metric}: {info['max_genre']} 比 {info['min_genre']} "
+                                  f"高 {info['relative_range_percent']:.1f}%")
+            
+            results["genre_comparison"] = genre_comparison_results
+        else:
+            print(f"     体裁对比分析失败: {genre_comparison_results.get('error', '未知错误')}")
             
         return results
         
@@ -320,6 +359,36 @@ class IntegratedGenreDisciplineAnalysis:
                 print(f"       差异: {length_diff:.0f} 字符 ({diff_percent:.1f}%)")
                 
         return source_stats
+        
+    def _prepare_genre_metadata(self, documents: List[Any]) -> Dict[str, Any]:
+        """准备体裁元数据"""
+        genre_metadata = {
+            "genre": [],
+            "extraction_info": []
+        }
+        
+        for doc in documents:
+            # 从文档中提取体裁信息
+            if hasattr(doc, 'genre') and doc.genre:
+                genre_metadata["genre"].append(doc.genre)
+            else:
+                genre_metadata["genre"].append("unknown")
+                
+            # 从提取信息中获取体裁
+            if hasattr(doc, 'extraction_info') and doc.extraction_info:
+                extraction_info = doc.extraction_info
+                if isinstance(extraction_info, dict) and "genre" in extraction_info:
+                    genre_metadata["extraction_info"].append({
+                        "genre": extraction_info.get("genre", "unknown"),
+                        "source_field": extraction_info.get("source_field", ""),
+                        "method": extraction_info.get("method", "")
+                    })
+                else:
+                    genre_metadata["extraction_info"].append({"genre": "unknown"})
+            else:
+                genre_metadata["extraction_info"].append({"genre": "unknown"})
+                
+        return genre_metadata
         
     def create_visualizations(self, results: Dict[str, Any], documents: List[Any]):
         """创建可视化图表"""
@@ -445,6 +514,11 @@ class IntegratedGenreDisciplineAnalysis:
         if len(discipline_groups) > 1 and len(source_groups) > 1:
             self._create_cross_distribution_heatmap(documents)
             
+        # 8. 体裁与学科分组柱状图
+        if "discipline_comparison" in results and "genre_comparison" in results:
+            print(f"\n8. 创建体裁与学科分组柱状图...")
+            self._create_genre_discipline_grouped_bar_charts(results, documents)
+            
     def _create_pie_chart(self, data: Dict[str, int], title: str, 
                          output_file: Path, color_palette: List[str]):
         """创建饼图"""
@@ -496,8 +570,8 @@ class IntegratedGenreDisciplineAnalysis:
             
         plt.figure(figsize=(12, 6))
         
-        # 创建直方图
-        n, bins, patches = plt.hist(data, bins=bins, color='steelblue', alpha=0.7, edgecolor='black')
+        # 创建直方图 - 使用SCI配色
+        n, bins, patches = plt.hist(data, bins=bins, color='#2E86AB', alpha=0.7, edgecolor='black')
         
         # 添加统计信息
         mean_val = np.mean(data)
@@ -578,8 +652,8 @@ class IntegratedGenreDisciplineAnalysis:
             
         plt.figure(figsize=(10, 8))
         
-        # 创建散点图
-        plt.scatter(x_data, y_data, alpha=0.6, color='steelblue', edgecolors='black', linewidth=0.5)
+        # 创建散点图 - 使用SCI配色
+        plt.scatter(x_data, y_data, alpha=0.6, color='#2E86AB', edgecolors='black', linewidth=0.5)
         
         # 计算相关系数
         correlation = np.corrcoef(x_data, y_data)[0, 1]
@@ -640,7 +714,8 @@ class IntegratedGenreDisciplineAnalysis:
         # 创建热力图
         plt.figure(figsize=(max(12, len(sources)*0.8), max(8, len(disciplines)*0.6)))
         
-        sns.heatmap(matrix, annot=True, fmt='.0f', cmap='YlOrRd',
+        # 使用更专业的SCI配色方案
+        sns.heatmap(matrix, annot=True, fmt='.0f', cmap='viridis',
                    xticklabels=sources, yticklabels=disciplines,
                    cbar_kws={'label': 'Document Count'})
         
@@ -654,6 +729,106 @@ class IntegratedGenreDisciplineAnalysis:
         output_file = self.output_dir / "cross_distribution_heatmap.png"
         plt.savefig(output_file, dpi=300, bbox_inches='tight')
         plt.close()
+        
+    def _create_genre_discipline_grouped_bar_charts(self, results: Dict[str, Any], documents: List[Any]):
+        """创建体裁与学科分组柱状图"""
+        try:
+            # 导入EnhancedVisualization
+            from enhanced_visualization import EnhancedVisualization
+            
+            # 创建可视化器
+            visualizer = EnhancedVisualization(str(self.output_dir))
+            
+            # 检查是否有必要的数据
+            if "discipline_comparison" not in results or "genre_comparison" not in results:
+                print("  警告: 缺少学科或体裁对比数据，跳过分组柱状图")
+                return
+            
+            discipline_results = results["discipline_comparison"]
+            genre_results = results["genre_comparison"]
+            
+            # 定义要显示的指标
+            metrics = [
+                "type_token_ratio",
+                "mtld_average", 
+                "academic_word_ratio",
+                "discipline_word_ratio",
+                "avg_word_length",
+                "vocabulary_richness"
+            ]
+            
+            # 创建综合图表
+            summaries = visualizer.create_comprehensive_genre_discipline_chart(
+                analysis_results=results,
+                metrics=metrics
+            )
+            
+            if summaries:
+                print(f"  成功创建 {len(summaries)} 个分组柱状图")
+                
+                # 在报告中添加可视化文件列表
+                self._add_grouped_bar_charts_to_report()
+                
+        except ImportError as e:
+            print(f"  错误: 无法导入EnhancedVisualization - {e}")
+        except Exception as e:
+            print(f"  错误: 创建分组柱状图时发生错误 - {e}")
+            import traceback
+            traceback.print_exc()
+            
+    def _add_grouped_bar_charts_to_report(self):
+        """在报告中添加分组柱状图文件列表"""
+        # 查找所有分组柱状图文件
+        grouped_bar_files = []
+        for file_path in self.output_dir.glob("*grouped_bar*.png"):
+            grouped_bar_files.append(file_path.name)
+        
+        for file_path in self.output_dir.glob("*metric_comparison*.png"):
+            grouped_bar_files.append(file_path.name)
+        
+        if grouped_bar_files:
+            # 更新Markdown报告
+            report_file = self.output_dir / "analysis_report.md"
+            if report_file.exists():
+                with open(report_file, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                
+                # 在可视化文件部分添加分组柱状图
+                if "## 7. 生成的可视化文件" in content:
+                    # 添加分组柱状图部分
+                    grouped_bar_section = "\n### 分组柱状图（体裁与学科对比）\n\n"
+                    for file_name in sorted(grouped_bar_files):
+                        # 从文件名提取指标名称
+                        if "type_token_ratio" in file_name:
+                            metric_name = "TTR (词汇丰富度)"
+                        elif "mtld_average" in file_name:
+                            metric_name = "MTLD (文本词汇多样性)"
+                        elif "academic_word_ratio" in file_name:
+                            metric_name = "学术词汇比例"
+                        elif "discipline_word_ratio" in file_name:
+                            metric_name = "学科词汇比例"
+                        elif "avg_word_length" in file_name:
+                            metric_name = "平均词长"
+                        elif "vocabulary_richness" in file_name:
+                            metric_name = "词汇丰富度"
+                        elif "metric_comparison" in file_name:
+                            metric_name = "多指标对比"
+                        else:
+                            metric_name = "体裁与学科对比"
+                        
+                        grouped_bar_section += f"- `{file_name}` - {metric_name}分组柱状图\n"
+                    
+                    # 插入到可视化文件部分
+                    insert_pos = content.find("## 7. 生成的可视化文件")
+                    end_pos = content.find("\n## 8. 结论", insert_pos)
+                    
+                    if end_pos > insert_pos:
+                        new_content = content[:end_pos] + grouped_bar_section + content[end_pos:]
+                        
+                        with open(report_file, 'w', encoding='utf-8') as f:
+                            f.write(new_content)
+                        
+                        print(f"  已更新报告文件，添加了 {len(grouped_bar_files)} 个分组柱状图")
         
     def generate_reports(self, results: Dict[str, Any], documents: List[Any]):
         """生成报告"""
@@ -826,15 +1001,53 @@ class IntegratedGenreDisciplineAnalysis:
             # 体裁比较
             if "genre_comparison" in results:
                 f.write("### 5.2 体裁间差异\n\n")
-                genre_stats = results["genre_comparison"]
+                genre_comparison = results["genre_comparison"]
                 
-                f.write("| 源文件（体裁） | 文档数 | 平均长度 | 标准差 |\n")
-                f.write("|---------------|--------|----------|--------|\n")
+                # 显示体裁基本信息
+                if "basic_statistics" in genre_comparison:
+                    stats = genre_comparison["basic_statistics"]
+                    f.write(f"**分析体裁数:** {stats.get('total_genres', 0)}\n")
+                    f.write(f"**体裁列表:** {', '.join(stats.get('genres_analyzed', []))}\n")
+                    f.write(f"**总文本数:** {stats.get('total_texts', 0):,}\n\n")
+                    
+                    # 显示各体裁文本数
+                    if "texts_by_genre" in stats:
+                        f.write("| 体裁 | 文档数 | 百分比 |\n")
+                        f.write("|------|--------|--------|\n")
+                        
+                        texts_by_genre = stats["texts_by_genre"]
+                        total_texts = sum(texts_by_genre.values())
+                        
+                        for genre, count in texts_by_genre.items():
+                            percentage = count / total_texts * 100 if total_texts > 0 else 0
+                            f.write(f"| {genre} | {count:,} | {percentage:.1f}% |\n")
+                        f.write("\n")
                 
-                sorted_genres = sorted(genre_stats.items(), key=lambda x: x[1]["mean_length"], reverse=True)[:10]
-                for genre, stats in sorted_genres:
-                    f.write(f"| {genre} | {stats['count']:,} | {stats['mean_length']:.0f} | {stats['std_length']:.0f} |\n")
-                f.write("\n")
+                # 显示体裁指标差异
+                if "differences_analysis" in genre_comparison:
+                    diffs = genre_comparison["differences_analysis"]
+                    if "max_min_differences" in diffs:
+                        f.write("**最大差异指标:**\n\n")
+                        f.write("| 指标 | 最高体裁 | 最低体裁 | 相对差异 |\n")
+                        f.write("|------|----------|----------|----------|\n")
+                        
+                        for metric, info in diffs["max_min_differences"].items():
+                            if info.get('relative_range_percent', 0) > 20:
+                                f.write(f"| {metric} | {info.get('max_genre', '')} | {info.get('min_genre', '')} | "
+                                       f"{info.get('relative_range_percent', 0):.1f}% |\n")
+                        f.write("\n")
+                        
+                # 显示体裁指标
+                if "genre_metrics" in genre_comparison:
+                    f.write("**体裁词汇指标:**\n\n")
+                    genre_metrics = genre_comparison["genre_metrics"]
+                    
+                    for genre, metrics in genre_metrics.items():
+                        f.write(f"**{genre}:**\n")
+                        for metric, value in metrics.items():
+                            if isinstance(value, (int, float)):
+                                f.write(f"- {metric}: {value:.4f}\n")
+                        f.write("\n")
                 
             # Unknown语料详细信息
             if "unknown_documents_details" in results:

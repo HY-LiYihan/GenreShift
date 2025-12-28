@@ -54,6 +54,7 @@ class EnhancedCorpusDocument:
     discipline: str = ""
     source_file: str = ""
     file_name: str = ""
+    genre: str = ""  # 新增：体裁字段
     
     # 时间属性
     year: Optional[int] = None
@@ -504,22 +505,22 @@ class EnhancedCorpusReader:
             if isinstance(data, list):
                 # 处理列表格式
                 for i, item in enumerate(data):
-                    doc = self._create_document_from_item(item, file_path_obj, version, i)
-                    if doc:
-                        documents.append(doc)
+                    docs = self._create_documents_from_item(item, file_path_obj, version, i)
+                    if docs:
+                        documents.extend(docs)
             elif isinstance(data, dict):
                 # 处理字典格式（可能包含多个文档）
                 if "documents" in data and isinstance(data["documents"], list):
                     # 嵌套的文档列表
                     for i, item in enumerate(data["documents"]):
-                        doc = self._create_document_from_item(item, file_path_obj, version, i)
-                        if doc:
-                            documents.append(doc)
+                        docs = self._create_documents_from_item(item, file_path_obj, version, i)
+                        if docs:
+                            documents.extend(docs)
                 else:
                     # 单个文档
-                    doc = self._create_document_from_item(data, file_path_obj, version, 0)
-                    if doc:
-                        documents.append(doc)
+                    docs = self._create_documents_from_item(data, file_path_obj, version, 0)
+                    if docs:
+                        documents.extend(docs)
                         
             self.logger.info(f"从 {file_path_obj} 读取了 {len(documents)} 个文档")
             return documents
@@ -528,10 +529,126 @@ class EnhancedCorpusReader:
             self.logger.error(f"无法解析文件 {file_path_obj}: {e}")
             return []
     
+    def _create_documents_from_item(self, item: Dict[str, Any], source_file: Path, 
+                                   version: str, index: int) -> List[EnhancedCorpusDocument]:
+        """
+        从数据项创建多个文档（支持多种体裁）
+        
+        Args:
+            item: 数据项字典
+            source_file: 源文件路径
+            version: 版本号
+            index: 文档索引
+            
+        Returns:
+            文档对象列表
+        """
+        documents = []
+        
+        # 提取元数据
+        metadata = self.extract_metadata_from_item(item, source_file, version)
+        
+        # 1. 创建科技新闻文档（来自text字段）
+        if "text" in item and item["text"]:
+            text_content = item["text"]
+            if isinstance(text_content, list):
+                # 合并所有段落
+                news_text = " ".join([str(p) for p in text_content if p])
+            elif isinstance(text_content, str):
+                news_text = text_content
+            else:
+                news_text = str(text_content)
+                
+            if news_text.strip():
+                # 清理文本
+                news_text = self._clean_text(news_text)
+                
+                # 创建文档ID
+                doc_id = f"{version}_{source_file.stem}_{index}_news"
+                
+                # 创建科技新闻文档
+                news_doc = EnhancedCorpusDocument(
+                    id=doc_id,
+                    text=news_text,
+                    version=version,
+                    discipline=metadata.get("discipline", ""),
+                    source_file=str(source_file),
+                    file_name=source_file.name,
+                    genre="science_news",  # 体裁：科技新闻
+                    year=metadata.get("year"),
+                    date=metadata.get("date"),
+                    title=item.get("title", ""),
+                    abstract=item.get("description", ""),  # 使用description作为摘要
+                    keywords=metadata.get("keywords", []),
+                    authors=metadata.get("authors", []),
+                    metadata=metadata,
+                    extraction_info={
+                        "method": "genre_extraction",
+                        "source_field": "text",
+                        "genre": "science_news"
+                    }
+                )
+                documents.append(news_doc)
+        
+        # 2. 创建学术论文文档（来自source_pdf字段中的abstract）
+        if "source_pdf" in item and item["source_pdf"]:
+            source_pdfs = item["source_pdf"]
+            if isinstance(source_pdfs, list):
+                for pdf_idx, pdf_item in enumerate(source_pdfs):
+                    if isinstance(pdf_item, dict) and "abstract" in pdf_item:
+                        abstract_text = pdf_item["abstract"]
+                        if abstract_text and isinstance(abstract_text, str):
+                            # 清理文本
+                            abstract_text = self._clean_text(abstract_text)
+                            
+                            if abstract_text.strip():
+                                # 创建文档ID
+                                doc_id = f"{version}_{source_file.stem}_{index}_paper_{pdf_idx}"
+                                
+                                # 创建学术论文文档
+                                paper_doc = EnhancedCorpusDocument(
+                                    id=doc_id,
+                                    text=abstract_text,
+                                    version=version,
+                                    discipline=metadata.get("discipline", ""),
+                                    source_file=str(source_file),
+                                    file_name=source_file.name,
+                                    genre="academic_paper",  # 体裁：学术论文
+                                    year=metadata.get("year"),
+                                    date=metadata.get("date"),
+                                    title=pdf_item.get("title", ""),
+                                    abstract=abstract_text,  # 摘要就是文本本身
+                                    keywords=metadata.get("keywords", []),
+                                    authors=pdf_item.get("author", metadata.get("authors", [])),
+                                    metadata={
+                                        **metadata,
+                                        "pdf_title": pdf_item.get("title", ""),
+                                        "pdf_authors": pdf_item.get("author", []),
+                                        "pdf_index": pdf_idx
+                                    },
+                                    extraction_info={
+                                        "method": "genre_extraction",
+                                        "source_field": "source_pdf.abstract",
+                                        "genre": "academic_paper",
+                                        "pdf_index": pdf_idx
+                                    }
+                                )
+                                documents.append(paper_doc)
+        
+        # 3. 如果没有提取到任何文档，尝试使用原来的方法
+        if not documents:
+            original_doc = self._create_document_from_item(item, source_file, version, index)
+            if original_doc:
+                # 设置默认体裁
+                original_doc.genre = "unknown"
+                documents.append(original_doc)
+        
+        return documents
+    
     def _create_document_from_item(self, item: Dict[str, Any], source_file: Path, 
                                    version: str, index: int) -> Optional[EnhancedCorpusDocument]:
         """
-        从数据项创建文档
+        从数据项创建文档（旧方法，向后兼容）
         
         Args:
             item: 数据项字典
@@ -564,6 +681,7 @@ class EnhancedCorpusReader:
             discipline=metadata.get("discipline", ""),
             source_file=str(source_file),
             file_name=source_file.name,
+            genre="unknown",  # 默认体裁
             year=metadata.get("year"),
             date=metadata.get("date"),
             title=text_content.get("title", ""),

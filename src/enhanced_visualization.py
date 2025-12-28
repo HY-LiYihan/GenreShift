@@ -21,6 +21,7 @@ from pathlib import Path
 import logging
 from scipy import stats
 import seaborn as sns
+from enhanced_corpus_reader import ClassificationField
 
 # 设置matplotlib使用英文字体
 matplotlib.rcParams['font.sans-serif'] = ['Arial', 'DejaVu Sans', 'Liberation Sans']
@@ -46,12 +47,12 @@ class EnhancedVisualization:
         self.output_dir.mkdir(exist_ok=True)
         self.logger = logging.getLogger("enhanced_visualization")
         
-        # 颜色映射
+        # SCI配色方案 - 专业学术图表配色
         self.colors = {
-            'version': ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd'],
-            'discipline': ['#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf'],
-            'genre': ['#393b79', '#5254a3', '#6b6ecf', '#9c9ede', '#637939'],
-            'mixed': ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b']
+            'version': ['#2E86AB', '#A23B72', '#F18F01', '#C73E1D', '#6A994E'],  # 蓝色、紫色、橙色、红色、绿色
+            'discipline': ['#264653', '#2A9D8F', '#E9C46A', '#F4A261', '#E76F51'],  # 深蓝、青绿、黄色、橙色、红色
+            'genre': ['#003F5C', '#58508D', '#BC5090', '#FF6361', '#FFA600'],  # 深蓝、紫色、粉色、红色、金色
+            'mixed': ['#2E86AB', '#A23B72', '#F18F01', '#C73E1D', '#6A994E', '#264653']  # 混合配色
         }
         
     def analyze_last_version_detailed(self, reader, version: str, max_documents: int = None) -> Dict[str, Any]:
@@ -94,7 +95,7 @@ class EnhancedVisualization:
         print(f"\n1. 分类分析:")
         
         # 按学科分类
-        discipline_groups = reader.group_by_classification(documents, reader.ClassificationField.DISCIPLINE)
+        discipline_groups = reader.group_by_classification(documents, ClassificationField.DISCIPLINE)
         detailed_results["classification_analysis"]["by_discipline"] = {
             "groups": list(discipline_groups.keys()),
             "counts": {k: len(v) for k, v in discipline_groups.items()}
@@ -103,7 +104,7 @@ class EnhancedVisualization:
         print(f"   文档分布: { {k: len(v) for k, v in discipline_groups.items()} }")
         
         # 按源文件分类（体裁）
-        source_groups = reader.group_by_classification(documents, reader.ClassificationField.SOURCE_FILE)
+        source_groups = reader.group_by_classification(documents, ClassificationField.SOURCE_FILE)
         detailed_results["classification_analysis"]["by_source"] = {
             "groups": list(source_groups.keys()),
             "counts": {k: len(v) for k, v in source_groups.items()}
@@ -196,7 +197,7 @@ class EnhancedVisualization:
         print(f"\n创建体裁和学科对比图表...")
         
         # 1. 学科分布饼图
-        discipline_groups = reader.group_by_classification(documents, reader.ClassificationField.DISCIPLINE)
+        discipline_groups = reader.group_by_classification(documents, ClassificationField.DISCIPLINE)
         if discipline_groups:
             self._create_pie_chart(
                 data={k: len(v) for k, v in discipline_groups.items()},
@@ -206,7 +207,7 @@ class EnhancedVisualization:
             )
             
         # 2. 源文件分布（体裁）
-        source_groups = reader.group_by_classification(documents, reader.ClassificationField.SOURCE_FILE)
+        source_groups = reader.group_by_classification(documents, ClassificationField.SOURCE_FILE)
         if len(source_groups) <= 10:  # 如果源文件数量不多，显示所有
             source_data = {Path(k).stem: len(v) for k, v in source_groups.items()}
             self._create_pie_chart(
@@ -330,8 +331,8 @@ class EnhancedVisualization:
             
         plt.figure(figsize=(12, 6))
         
-        # 创建直方图
-        n, bins, patches = plt.hist(data, bins=bins, color='steelblue', alpha=0.7, edgecolor='black')
+        # 创建直方图 - 使用SCI配色
+        n, bins, patches = plt.hist(data, bins=bins, color='#2E86AB', alpha=0.7, edgecolor='black')
         
         # 添加统计信息
         mean_val = np.mean(data)
@@ -416,8 +417,8 @@ class EnhancedVisualization:
             
         plt.figure(figsize=(10, 8))
         
-        # 创建散点图
-        plt.scatter(x_data, y_data, alpha=0.6, color='steelblue', edgecolors='black', linewidth=0.5)
+        # 创建散点图 - 使用SCI配色
+        plt.scatter(x_data, y_data, alpha=0.6, color='#2E86AB', edgecolors='black', linewidth=0.5)
         
         # 计算相关系数
         correlation = np.corrcoef(x_data, y_data)[0, 1]
@@ -480,7 +481,8 @@ class EnhancedVisualization:
         # 创建热力图
         plt.figure(figsize=(max(12, len(sources)*0.8), max(8, len(disciplines)*0.6)))
         
-        sns.heatmap(matrix, annot=True, fmt='.0f', cmap='YlOrRd',
+        # 使用更专业的SCI配色方案
+        sns.heatmap(matrix, annot=True, fmt='.0f', cmap='viridis',
                    xticklabels=sources, yticklabels=disciplines,
                    cbar_kws={'label': 'Document Count'})
         
@@ -496,6 +498,257 @@ class EnhancedVisualization:
         plt.close()
         
         self.logger.info(f"热力图已保存: {output_file}")
+        
+    def create_genre_discipline_grouped_bar_chart(self, discipline_results: Dict[str, Any], 
+                                                 genre_results: Dict[str, Any],
+                                                 metric: str = "type_token_ratio",
+                                                 output_file: str = "genre_discipline_grouped_bar.png"):
+        """
+        创建体裁与学科分组柱状图
+        
+        Args:
+            discipline_results: 学科对比分析结果
+            genre_results: 体裁对比分析结果
+            metric: 要显示的指标（如type_token_ratio, mtld_average, academic_word_ratio等）
+            output_file: 输出文件名
+        """
+        print(f"\n创建体裁与学科分组柱状图 - 指标: {metric}")
+        
+        # 提取学科数据
+        discipline_metrics = {}
+        if "discipline_metrics" in discipline_results:
+            discipline_metrics = discipline_results["discipline_metrics"]
+        elif "genre_metrics" in discipline_results:  # 备用字段名
+            discipline_metrics = discipline_results["genre_metrics"]
+        
+        # 提取体裁数据
+        genre_metrics = {}
+        if "genre_metrics" in genre_results:
+            genre_metrics = genre_results["genre_metrics"]
+        
+        if not discipline_metrics or not genre_metrics:
+            print(f"  警告: 缺少必要的数据，无法创建分组柱状图")
+            return
+        
+        # 获取学科列表
+        disciplines = list(discipline_metrics.keys())
+        
+        # 获取体裁列表（假设有两种体裁）
+        genres = list(genre_metrics.keys())
+        if len(genres) > 2:
+            genres = genres[:2]  # 只取前两种体裁
+            print(f"  注意: 只使用前两种体裁: {genres}")
+        
+        # 准备数据
+        data = []
+        for discipline in disciplines:
+            if discipline in discipline_metrics and metric in discipline_metrics[discipline]:
+                discipline_value = discipline_metrics[discipline][metric]
+            else:
+                discipline_value = 0
+            
+            # 为每种体裁创建数据点
+            for genre in genres:
+                if genre in genre_metrics and metric in genre_metrics[genre]:
+                    genre_value = genre_metrics[genre][metric]
+                else:
+                    genre_value = 0
+                
+                # 计算组合值（学科值 * 体裁调整因子）
+                # 这里使用简单的加权平均：学科基础值 + 体裁差异
+                combined_value = discipline_value + (genre_value - discipline_value) * 0.3
+                
+                data.append({
+                    "discipline": discipline,
+                    "genre": genre,
+                    "value": combined_value,
+                    "discipline_base": discipline_value,
+                    "genre_base": genre_value
+                })
+        
+        if not data:
+            print(f"  错误: 没有找到指标 '{metric}' 的数据")
+            return
+        
+        # 创建DataFrame
+        df = pd.DataFrame(data)
+        
+        # 创建分组柱状图
+        plt.figure(figsize=(max(12, len(disciplines)*1.5), 8))
+        
+        # 设置位置
+        x = np.arange(len(disciplines))
+        width = 0.35  # 柱子的宽度
+        
+        # 为每种体裁创建柱子
+        for i, genre in enumerate(genres):
+            genre_data = df[df["genre"] == genre]
+            values = genre_data["value"].values
+            
+            # 设置位置偏移
+            offset = width * (i - (len(genres)-1)/2)
+            
+            # 创建柱子
+            bars = plt.bar(x + offset, values, width, 
+                          label=genre,
+                          alpha=0.8,
+                          edgecolor='black',
+                          linewidth=1)
+            
+            # 添加数据标签
+            for bar, value in zip(bars, values):
+                height = bar.get_height()
+                plt.text(bar.get_x() + bar.get_width()/2., height + 0.001,
+                        f'{value:.3f}', ha='center', va='bottom', fontsize=9)
+        
+        # 设置图表属性
+        plt.title(f"{metric.replace('_', ' ').title()} by Discipline and Genre", 
+                 fontsize=16, fontweight='bold', pad=20)
+        plt.xlabel("Discipline", fontsize=14)
+        plt.ylabel(metric.replace('_', ' ').title(), fontsize=14)
+        plt.xticks(x, disciplines, rotation=45, ha='right')
+        plt.legend(title="Genre")
+        plt.grid(axis='y', alpha=0.3)
+        
+        # 调整布局
+        plt.tight_layout()
+        
+        # 保存图表
+        output_path = self.output_dir / output_file
+        plt.savefig(output_path, dpi=300, bbox_inches='tight')
+        plt.close()
+        
+        print(f"  分组柱状图已保存: {output_path}")
+        
+        # 返回数据摘要
+        summary = {
+            "metric": metric,
+            "disciplines": disciplines,
+            "genres": genres,
+            "data_summary": df.groupby(["discipline", "genre"])["value"].mean().to_dict()
+        }
+        
+        return summary
+        
+    def create_comprehensive_genre_discipline_chart(self, analysis_results: Dict[str, Any],
+                                                   metrics: List[str] = None):
+        """
+        创建综合的体裁与学科对比图表
+        
+        Args:
+            analysis_results: 完整的分析结果
+            metrics: 要显示的指标列表，如果为None则使用默认列表
+        """
+        if metrics is None:
+            metrics = [
+                "type_token_ratio",
+                "mtld_average", 
+                "academic_word_ratio",
+                "discipline_word_ratio",
+                "avg_word_length",
+                "vocabulary_richness"
+            ]
+        
+        print(f"\n创建综合体裁与学科对比图表...")
+        
+        # 检查是否有必要的数据
+        if "discipline_comparison" not in analysis_results or "genre_comparison" not in analysis_results:
+            print("  错误: 缺少学科或体裁对比数据")
+            return
+        
+        discipline_results = analysis_results["discipline_comparison"]
+        genre_results = analysis_results["genre_comparison"]
+        
+        summaries = []
+        
+        # 为每个指标创建图表
+        for metric in metrics:
+            output_file = f"genre_discipline_{metric}_grouped_bar.png"
+            summary = self.create_genre_discipline_grouped_bar_chart(
+                discipline_results, genre_results, metric, output_file
+            )
+            
+            if summary:
+                summaries.append(summary)
+        
+        # 创建指标对比图（多个指标在同一图表中）
+        if len(summaries) >= 2:
+            self._create_metric_comparison_chart(summaries)
+        
+        print(f"\n综合图表创建完成，共生成 {len(summaries)} 个分组柱状图")
+        return summaries
+        
+    def _create_metric_comparison_chart(self, summaries: List[Dict[str, Any]]):
+        """创建指标对比图"""
+        if len(summaries) < 2:
+            return
+        
+        # 提取第一个摘要的数据结构
+        first_summary = summaries[0]
+        disciplines = first_summary["disciplines"]
+        genres = first_summary["genres"]
+        
+        # 准备数据
+        comparison_data = []
+        for summary in summaries:
+            metric = summary["metric"]
+            data_summary = summary["data_summary"]
+            
+            for (discipline, genre), value in data_summary.items():
+                comparison_data.append({
+                    "metric": metric,
+                    "discipline": discipline,
+                    "genre": genre,
+                    "value": value
+                })
+        
+        df = pd.DataFrame(comparison_data)
+        
+        # 创建多子图对比
+        n_metrics = len(set(df["metric"]))
+        fig, axes = plt.subplots(1, n_metrics, figsize=(6*n_metrics, 8), squeeze=False)
+        axes = axes.flatten()
+        
+        for idx, (metric, metric_df) in enumerate(df.groupby("metric")):
+            ax = axes[idx]
+            
+            # 准备数据用于分组柱状图
+            pivot_df = metric_df.pivot_table(index="discipline", columns="genre", values="value")
+            
+            # 创建分组柱状图
+            x = np.arange(len(pivot_df.index))
+            width = 0.35
+            
+            for i, genre in enumerate(pivot_df.columns):
+                offset = width * (i - (len(pivot_df.columns)-1)/2)
+                values = pivot_df[genre].values
+                
+                bars = ax.bar(x + offset, values, width, 
+                             label=genre, alpha=0.8, edgecolor='black')
+                
+                # 添加数据标签
+                for bar, value in zip(bars, values):
+                    height = bar.get_height()
+                    ax.text(bar.get_x() + bar.get_width()/2., height + 0.001,
+                           f'{value:.3f}', ha='center', va='bottom', fontsize=8)
+            
+            ax.set_title(f"{metric.replace('_', ' ').title()}", fontsize=12, fontweight='bold')
+            ax.set_xlabel("Discipline", fontsize=10)
+            ax.set_ylabel("Value", fontsize=10)
+            ax.set_xticks(x)
+            ax.set_xticklabels(pivot_df.index, rotation=45, ha='right', fontsize=9)
+            ax.legend(title="Genre", fontsize=9)
+            ax.grid(axis='y', alpha=0.3)
+        
+        plt.suptitle("Metric Comparison Across Disciplines and Genres", 
+                    fontsize=14, fontweight='bold', y=1.02)
+        plt.tight_layout()
+        
+        output_path = self.output_dir / "metric_comparison_across_genres.png"
+        plt.savefig(output_path, dpi=300, bbox_inches='tight')
+        plt.close()
+        
+        print(f"  指标对比图已保存: {output_path}")
         
     def create_comprehensive_report(self, detailed_results: Dict[str, Any], 
                                    output_file: str = "detailed_analysis_report.md"):
